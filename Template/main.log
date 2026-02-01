@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.2)  2 FEB 2026 02:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.2)  2 FEB 2026 03:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1192,75 +1192,75 @@ File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 ) [3
 
 ]
-<img/fitting_OCV.png, id=153, 425.9112pt x 353.6412pt>
+<img/fitting_OCV.png, id=214, 425.9112pt x 353.6412pt>
 File: img/fitting_OCV.png Graphic file (type png)
 <use img/fitting_OCV.png>
 Package pdftex.def Info: img/fitting_OCV.png  used on input line 132.
 (pdftex.def)             Requested size: 204.85846pt x 170.09659pt.
-<img/fitting_R0.png, id=155, 424.9476pt x 353.6412pt>
+<img/fitting_R0.png, id=216, 424.9476pt x 353.6412pt>
 File: img/fitting_R0.png Graphic file (type png)
 <use img/fitting_R0.png>
 Package pdftex.def Info: img/fitting_R0.png  used on input line 137.
 (pdftex.def)             Requested size: 204.85846pt x 170.4851pt.
-<img/fitting_C1.png, id=156, 425.9112pt x 353.6412pt>
+<img/fitting_C1.png, id=217, 425.9112pt x 353.6412pt>
 File: img/fitting_C1.png Graphic file (type png)
 <use img/fitting_C1.png>
 Package pdftex.def Info: img/fitting_C1.png  used on input line 142.
 (pdftex.def)             Requested size: 204.85846pt x 170.09659pt.
-<img/fitting_R1.png, id=157, 424.9476pt x 353.6412pt>
+<img/fitting_R1.png, id=218, 424.9476pt x 353.6412pt>
 File: img/fitting_R1.png Graphic file (type png)
 <use img/fitting_R1.png>
 Package pdftex.def Info: img/fitting_R1.png  used on input line 147.
 (pdftex.def)             Requested size: 204.85846pt x 170.4851pt.
-<img/fitting_C2.png, id=158, 425.9112pt x 353.6412pt>
+<img/fitting_C2.png, id=219, 425.9112pt x 353.6412pt>
 File: img/fitting_C2.png Graphic file (type png)
 <use img/fitting_C2.png>
 Package pdftex.def Info: img/fitting_C2.png  used on input line 152.
 (pdftex.def)             Requested size: 204.85846pt x 170.09659pt.
-<img/fitting_R2.png, id=159, 424.9476pt x 353.6412pt>
+<img/fitting_R2.png, id=220, 424.9476pt x 353.6412pt>
 File: img/fitting_R2.png Graphic file (type png)
 <use img/fitting_R2.png>
 Package pdftex.def Info: img/fitting_R2.png  used on input line 157.
 (pdftex.def)             Requested size: 204.85846pt x 170.4851pt.
  [4] [5 <./img/fitting_OCV.png> <./img/fitting_R0.png> <./img/fitting_C1.png> <./img/fitting_R1.png> <./img/fitting_C2.png> <./img/fitting_R2.png>]
-<img/ci_soc_profile.png, id=191, 425.4294pt x 353.1594pt>
+<img/ci_soc_profile.png, id=251, 425.4294pt x 353.1594pt>
 File: img/ci_soc_profile.png Graphic file (type png)
 <use img/ci_soc_profile.png>
 Package pdftex.def Info: img/ci_soc_profile.png  used on input line 195.
 (pdftex.def)             Requested size: 204.85846pt x 170.05884pt.
-<img/ci_voltage_profile.png, id=192, 425.4294pt x 353.1594pt>
+<img/ci_voltage_profile.png, id=252, 425.4294pt x 353.1594pt>
 File: img/ci_voltage_profile.png Graphic file (type png)
 <use img/ci_voltage_profile.png>
 Package pdftex.def Info: img/ci_voltage_profile.png  used on input line 200.
 (pdftex.def)             Requested size: 204.85846pt x 170.05884pt.
  [6 <./img/ci_soc_profile.png> <./img/ci_voltage_profile.png>]
-<img/cp_soc_profile.png, id=202, 425.4294pt x 353.1594pt>
+<img/cp_soc_profile.png, id=262, 425.4294pt x 353.1594pt>
 File: img/cp_soc_profile.png Graphic file (type png)
 <use img/cp_soc_profile.png>
 Package pdftex.def Info: img/cp_soc_profile.png  used on input line 220.
 (pdftex.def)             Requested size: 204.85846pt x 170.05884pt.
-<img/cp_voltage_profile.png, id=203, 425.4294pt x 353.1594pt>
+<img/cp_voltage_profile.png, id=263, 425.4294pt x 353.1594pt>
 File: img/cp_voltage_profile.png Graphic file (type png)
 <use img/cp_voltage_profile.png>
 Package pdftex.def Info: img/cp_voltage_profile.png  used on input line 225.
 (pdftex.def)             Requested size: 204.85846pt x 170.05884pt.
 ) (./4-actual_battery.tex [7 <./img/cp_soc_profile.png> <./img/cp_voltage_profile.png>]
-<img/3d_surface_R0.png, id=214, 463.2507pt x 450.9648pt>
+<img/3d_surface_R0.png, id=274, 463.2507pt x 450.9648pt>
 File: img/3d_surface_R0.png Graphic file (type png)
 <use img/3d_surface_R0.png>
 Package pdftex.def Info: img/3d_surface_R0.png  used on input line 36.
 (pdftex.def)             Requested size: 136.57462pt x 132.95088pt.
-<img/3d_surface_R1.png, id=215, 456.0237pt x 450.9648pt>
+<img/3d_surface_R1.png, id=275, 456.0237pt x 450.9648pt>
 File: img/3d_surface_R1.png Graphic file (type png)
 <use img/3d_surface_R1.png>
 Package pdftex.def Info: img/3d_surface_R1.png  used on input line 41.
 (pdftex.def)             Requested size: 136.57462pt x 135.05652pt.
-<img/3d_surface_R2.png, id=216, 459.99855pt x 450.9648pt>
+<img/3d_surface_R2.png, id=276, 459.99855pt x 450.9648pt>
 File: img/3d_surface_R2.png Graphic file (type png)
 <use img/3d_surface_R2.png>
 Package pdftex.def Info: img/3d_surface_R2.png  used on input line 46.
 (pdftex.def)             Requested size: 136.57462pt x 133.8936pt.
-<img/depletion_time_heatmap.png, id=217, 598.8774pt x 534.3162pt>
+<img/depletion_time_heatmap.png, id=277, 598.8774pt x 534.3162pt>
 File: img/depletion_time_heatmap.png Graphic file (type png)
 <use img/depletion_time_heatmap.png>
 Package pdftex.def Info: img/depletion_time_heatmap.png  used on input line 56.
@@ -1275,29 +1275,194 @@ Overfull \hbox (5.38364pt too wide) in paragraph at lines 134--135
 \T1/ppl/m/n/12 an au-dio DSP, digital-to-analog con-ver-sion (DAC), and driv-ing speak-ers or head-phones.
  []
 
-<img/power_model_fitting.png, id=251, 867.4809pt x 668.9793pt>
+<img/power_model_fitting.png, id=311, 867.4809pt x 668.9793pt>
 File: img/power_model_fitting.png Graphic file (type png)
 <use img/power_model_fitting.png>
 Package pdftex.def Info: img/power_model_fitting.png  used on input line 159.
 (pdftex.def)             Requested size: 409.71692pt x 315.96169pt.
 [11]
-<img/usage_scenarios_table.png, id=262, 867.7218pt x 354.123pt>
+<img/usage_scenarios_table.png, id=323, 867.7218pt x 354.123pt>
 File: img/usage_scenarios_table.png Graphic file (type png)
 <use img/usage_scenarios_table.png>
 Package pdftex.def Info: img/usage_scenarios_table.png  used on input line 169.
 (pdftex.def)             Requested size: 409.71692pt x 167.20511pt.
  [12 <./img/power_model_fitting.png> <./img/usage_scenarios_table.png>]
-<img/depletion_time_thermal_heatmap.png, id=274, 598.8774pt x 534.3162pt>
+<img/depletion_time_thermal_heatmap.png, id=335, 598.8774pt x 534.3162pt>
 File: img/depletion_time_thermal_heatmap.png Graphic file (type png)
 <use img/depletion_time_thermal_heatmap.png>
 Package pdftex.def Info: img/depletion_time_thermal_heatmap.png  used on input line 223.
 (pdftex.def)             Requested size: 204.85846pt x 182.7739pt.
-<img/max_temperature_thermal_heatmap.png, id=275, 592.614pt x 534.3162pt>
+<img/max_temperature_thermal_heatmap.png, id=336, 592.614pt x 534.3162pt>
 File: img/max_temperature_thermal_heatmap.png Graphic file (type png)
 <use img/max_temperature_thermal_heatmap.png>
 Package pdftex.def Info: img/max_temperature_thermal_heatmap.png  used on input line 227.
 (pdftex.def)             Requested size: 204.85846pt x 184.70616pt.
- [13]) (./5-sensitivity_analysis.tex) (./6-recommendations.tex) [14 <./img/depletion_time_thermal_heatmap.png> <./img/max_temperature_thermal_heatmap.png>] (./7-appendix.tex) (./8-references.tex) (./9-ai_use_report.tex) 
+ [13]) (./5-sensitivity_analysis.tex) (./6-recommendations.tex) [14 <./img/depletion_time_thermal_heatmap.png> <./img/max_temperature_thermal_heatmap.png>] (./7-appendix.tex
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+[]|\T1/ppl/m/n/12 Internal Re-sis-
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 13--13
+[]|\T1/ppl/m/n/12 Total in-ter-nal re-sis-tance of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+[]|\T1/ppl/m/n/12 Ohmic Re-sis-
+ []
+
+
+Underfull \hbox (badness 6510) in paragraph at lines 14--14
+[]|\T1/ppl/m/n/12 Ionic and elec-tronic re-sis-
+ []
+
+
+Underfull \hbox (badness 3386) in paragraph at lines 15--15
+[]|\T1/ppl/m/n/12 Polarization Re-
+ []
+
+
+Underfull \hbox (badness 3386) in paragraph at lines 16--16
+[]|\T1/ppl/m/n/12 Polarization Re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]|\T1/ppl/m/n/12 Activation En-
+ []
+
+
+Underfull \hbox (badness 7631) in paragraph at lines 17--17
+[]|\T1/ppl/m/n/12 Energy bar-rier for charge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]|\T1/ppl/m/n/12 Universal Gas
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 18--18
+[]|\T1/ppl/m/n/12 Physical con-stant in Ar-rhe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+[]|\T1/ppl/m/n/12 8.314
+ []
+
+
+Underfull \hbox (badness 5771) in paragraph at lines 19--19
+[]|\T1/ppl/m/n/12 Real-time bat-tery tem-per-a-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\T1/ppl/m/n/12 Environmental
+ []
+
+
+Underfull \hbox (badness 3302) in paragraph at lines 20--20
+[]|\T1/ppl/m/n/12 Ambient tem-per-a-ture (con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\T1/ppl/m/n/12 Discharge Cur-
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 54--54
+[]|\T1/ppl/m/n/12 Power con-sump-tion of dis-
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+[]|\T1/ppl/m/n/12 Big Core Fre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+[]|\T1/ppl/m/n/12 Frequency of high-
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 75--75
+[]|\T1/ppl/m/n/12 Small Core Fre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+[]|\T1/ppl/m/n/12 Max Big Core
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 76--76
+[]|\T1/ppl/m/n/12 Maximum fre-quency of big
+ []
+
+
+Underfull \hbox (badness 2680) in paragraph at lines 80--80
+[]|\T1/ppl/m/n/12 Small Core Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+[]|\T1/ppl/m/n/12 Wireless com-mu-ni-ca-tion
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 112--112
+[]|\T1/ppl/m/n/12 GPS Power Co-
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
+[]|\T1/ppl/m/n/12 Audio Power
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+[]|\T1/ppl/m/n/12 Mode Ad-just-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+[]|\T1/ppl/m/n/12 Power Sav-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+[]|\T1/ppl/m/n/12 Power Sav-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
+[]|\T1/ppl/m/n/12 Internal Heat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+[]|\T1/ppl/m/n/12 Battery Joule
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
+[]|\T1/ppl/m/n/12 Heat Trans-fer
+ []
+
+
+Overfull \hbox (15.04318pt too wide) in paragraph at lines 170--171
+[]|\T1/ppl/m/n/12 Dimensionless| 
+ []
+
+[17]
+Underfull \hbox (badness 3679) in paragraph at lines 186--186
+[]|\T1/ppl/m/n/12 Maximum Tem-
+ []
+
+) (./8-references.tex) (./9-ai_use_report.tex) [18] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -1305,21 +1470,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3286F61AC09097ABA8033B29FDAFE11E;3885.
+(rerunfilecheck)             Checksum: D80C6661BB716217071AE6ADC4B12710;5683.
  ) 
 Here is how much of TeX's memory you used:
- 37275 strings out of 467533
- 731126 string characters out of 5423669
- 1331338 words of memory out of 5000000
- 65419 multiletter control sequences out of 15000+600000
+ 37319 strings out of 467533
+ 731873 string characters out of 5423669
+ 1338338 words of memory out of 5000000
+ 65437 multiletter control sequences out of 15000+600000
  659583 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,13n,108p,760b,629s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (14 pages, 2756493 bytes).
+Output written on main.pdf (18 pages, 2766329 bytes).
 PDF statistics:
- 396 PDF objects out of 1000 (max. 8388607)
- 302 compressed objects within 4 object streams
- 79 named destinations out of 1000 (max. 500000)
- 279 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 490 PDF objects out of 1000 (max. 8388607)
+ 392 compressed objects within 4 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 375 words of extra memory for PDF output out of 10000 (max. 10000000)
 

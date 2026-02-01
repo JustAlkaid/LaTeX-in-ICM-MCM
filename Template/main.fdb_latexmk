@@ -1,12 +1,12 @@
 # Fdb version 4
-["pdflatex"] 1769970902.76874 "d:/Codes/Py/美赛/论文/LaTeX-in-ICM-MCM/Template/main.tex" "main.pdf" "main" 1769970908.83923 0
+["pdflatex"] 1769973959.21549 "d:/Codes/Py/美赛/论文/LaTeX-in-ICM-MCM/Template/main.tex" "main.pdf" "main" 1769973965.22404 0
   "1-introduction.tex" 1769847992 0 d41d8cd98f00b204e9800998ecf8427e ""
   "2-notations.tex" 1769847992 0 d41d8cd98f00b204e9800998ecf8427e ""
   "3-ideal_battery.tex" 1769949832 12689 6cf3b7ea77d35f40b62d7bae4b163d24 ""
   "4-actual_battery.tex" 1769970831 16372 0abb6475d549118872742d9a9a9a7caa ""
   "5-sensitivity_analysis.tex" 1769847992 0 d41d8cd98f00b204e9800998ecf8427e ""
   "6-recommendations.tex" 1769847992 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "7-appendix.tex" 1769847992 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "7-appendix.tex" 1769973939 8299 d41a9ea1dc6d095cf97012259c061fd3 ""
   "8-references.tex" 1769847992 0 d41d8cd98f00b204e9800998ecf8427e ""
   "9-ai_use_report.tex" 1769847992 0 d41d8cd98f00b204e9800998ecf8427e ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1769959700 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -296,10 +296,10 @@
   "img/max_temperature_thermal_heatmap.png" 1769957993 84879 1f1256f115617d635a9184fe046ab876 ""
   "img/power_model_fitting.png" 1769963598 765388 e322afe8a3f30f0dc649fa972697a761 ""
   "img/usage_scenarios_table.png" 1769968611 181486 05b76360f2eda95b6f0a8cc6de8e6d1e ""
-  "main.aux" 1769970908 11547 0cd47973958fa96eeb739d94e38c8d6c "pdflatex"
-  "main.out" 1769970908 3885 3286f61ac09097aba8033b29fdafe11e "pdflatex"
+  "main.aux" 1769973964 13109 0af1702d81d21c384edf7c8522333e84 "pdflatex"
+  "main.out" 1769973964 5683 d80c6661bb716217071ae6adc4b12710 "pdflatex"
   "main.tex" 1769876362 7638 fbfafe2f1dcba3434410599dd1abd151 ""
-  "main.toc" 1769970908 2139 a1888ae998625d94067733e7f827bf10 "pdflatex"
+  "main.toc" 1769973964 3202 dd357dbfeafb218f5ba69decedb04652 "pdflatex"
   "new_command.tex" 1769847992 328 b3ed1467566f0e0d1c61713c6ab46d1e ""
   (generated)
   "main.aux"

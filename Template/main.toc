@@ -20,4 +20,16 @@
 \contentsline {subsection}{\numberline {2.4}Heat Transfer Model in High-Performance Scenarios}{13}{subsection.0.2.4}%
 \contentsline {subsection}{\numberline {2.5}Answer to Question 1}{14}{subsection.0.2.5}%
 \contentsline {subsection}{\numberline {2.6}Answer to Question 2}{14}{subsection.0.2.6}%
+\contentsline {section}{\numberline {A}Notation}{15}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Battery Parameters}{15}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Power Consumption Parameters}{15}{subsection.A.2}%
+\contentsline {subsubsection}{\numberline {A.2.1}Total Power Model}{15}{subsubsection.A.2.1}%
+\contentsline {subsubsection}{\numberline {A.2.2}Screen Power}{16}{subsubsection.A.2.2}%
+\contentsline {subsubsection}{\numberline {A.2.3}CPU Power}{16}{subsubsection.A.2.3}%
+\contentsline {subsubsection}{\numberline {A.2.4}Network Power}{16}{subsubsection.A.2.4}%
+\contentsline {subsubsection}{\numberline {A.2.5}GPS Power}{17}{subsubsection.A.2.5}%
+\contentsline {subsubsection}{\numberline {A.2.6}Audio Power}{17}{subsubsection.A.2.6}%
+\contentsline {subsubsection}{\numberline {A.2.7}System Mode Power Adjustment}{17}{subsubsection.A.2.7}%
+\contentsline {subsection}{\numberline {A.3}Thermal Parameters}{18}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Time and Derived Quantities}{18}{subsection.A.4}%
 \contentsfinish 
