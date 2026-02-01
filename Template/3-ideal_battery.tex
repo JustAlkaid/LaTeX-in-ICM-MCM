@@ -161,7 +161,8 @@
             \label{fig:parameter_estimation_results}
         \end{figure}
 
-        6-degree polynomial is used to fit the OCV-SOC curve, and cubic functions are used to fit the RC parameters.  
+        6-degree polynomial is used to fit the OCV-SOC curve, cubic functions are used to fit the $C_1, C_2$, and double exponential functions 
+        $y = A_1 e^{B_1 x} + A_2 e^{B_2 x} + C$ are used to fit the $R_0, R_1, R_2$ curves. 
 
         As the fitting result shows, the Ohm resistance $R_0$ increases significantly when SoC is low, which may be the main reason for voltage drop and 
         device shutdown. Later we will verify this conclusion. Polarization resistances $R_1, R_2$ also increase when SoC is low, indicating the battery's 
@@ -185,7 +186,7 @@
             \end{equation}
             
             Then perform Rk45 algorithm to the polarization voltages $U_1, U_2$ with initial conditions $U_1(0) = U_2(0) = 0$, we can get the final result
-            as follows. note that output power and loss are shown with different units.
+            as follows.
 
             \begin{figure}[H]
             \centering
@@ -202,6 +203,10 @@
 
             \caption{Simulation results under constant current load profile}
         \end{figure}
+
+        It can be seen that although the SoC decreases linearly under constant current load, the terminal voltage decreases steadily at first, then 
+        suddenly drops to a "dead" value, which makes the device shutdown. The phenomenon is consistent with our daily experience.
+
         \subsubsection{Constant power}
             The output power
             \begin{equation}
@@ -223,6 +228,5 @@
                 \caption{Simulation results under constant power load profile}
             \end{figure}
 
-            It can be seen that under constant power load profile, the more the battery discharges, the larger the current it needs to provide to maintain
-            constant power output, so the voltage drops faster. This is consistent with our daily experience that devices tend to shutdown quicker when 
-            the battery is low.
+            Similar phenomena can be observed under constant power load profile. However, the terminal voltage drops more rapidly compared to the
+            constant current case, indicating that constant power loads are more stressful to the battery.
