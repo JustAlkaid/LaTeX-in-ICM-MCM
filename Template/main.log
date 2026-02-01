@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  1 FEB 2026 18:31
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  1 FEB 2026 22:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1210,7 +1210,19 @@ File: img/3d_surface_R1.png Graphic file (type bmp)
 <img/3d_surface_R1.png>
 File: img/3d_surface_R2.png Graphic file (type bmp)
 <img/3d_surface_R2.png>
- [8]) (./5-sensitivity_analysis.tex) (./6-recommendations.tex) [9] (./7-appendix.tex) (./8-references.tex) (./9-ai_use_report.tex) 
+File: img/depletion_time_heatmap.png Graphic file (type bmp)
+<img/depletion_time_heatmap.png>
+ [8]
+Overfull \hbox (3.09038pt too wide) in paragraph at lines 60--63
+\T1/ppl/m/n/12 tem-per-a-ture im-proves bat-tery short-term per-for-mance, it also ac-cel-er-ates bat-tery degra-
+ []
+
+[9]
+File: img/depletion_time_thermal_heatmap.png Graphic file (type bmp)
+<img/depletion_time_thermal_heatmap.png>
+File: img/max_temperature_thermal_heatmap.png Graphic file (type bmp)
+<img/max_temperature_thermal_heatmap.png>
+) (./5-sensitivity_analysis.tex) (./6-recommendations.tex) [10] (./7-appendix.tex) (./8-references.tex) (./9-ai_use_report.tex) 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -1221,12 +1233,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: DA37E842AEB16D21A17E81AAD76BF33D;2602.
  ) 
 Here is how much of TeX's memory you used:
- 36370 strings out of 476720
- 715470 string characters out of 5801445
+ 36403 strings out of 476720
+ 716791 string characters out of 5801445
  1933842 words of memory out of 5000000
- 57716 multiletter control sequences out of 15000+600000
+ 57746 multiletter control sequences out of 15000+600000
  581980 words of font info for 81 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  94i,13n,107p,688b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (9 pages).
+Output written on main.pdf (10 pages).

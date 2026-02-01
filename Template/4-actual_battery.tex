@@ -10,20 +10,21 @@
                                                   High performance demands can lead to increased heat generation, which int turns affect battery 
                                                   temperature.
             \item \textbf{Shutdown Voltage}: Electronics need a minimum voltage to operate correctly. If the battery voltage drops(steadily or suddenly) 
-                                             below this threshold, the device will shutdown even if SoC is not zero.
+                                             below this threshold, the device will shutdown even if SoC is not zero. In this section, we'll assume that 
+                                             if the battery voltage drops below 3.2V, the device will shutdown immediately.
         \end{itemize}
 
     \subsection{Temperature Behavior of Battery}
         Actual battery behavior is significantly influenced by temperature variations. The most common parameter affected by temperature is the internal 
         resistance. Using the Arrhenius' equation, we can model the temperature dependence of internal resistance as follows:
         \begin{equation}
-            R = R_0 \cdot e^{ - \dfrac{E_a}{R_u T}}
+            R = R_0 \cdot e^{\dfrac{E_a}{R_u T}}
         \end{equation}
         where $R_0$ is a reference resistance, $E_a$ is the activation energy, $R_u$ is the universal gas constant and $T_0$ is a reference temperature.
         
         To conduct the regression, rewrite the equation in linear form by taking the natural logarithm:
         \begin{equation}
-            \ln R  = - \frac{E_a}{R_u} \cdot \dfrac{1}{T} + \ln R_0
+            \ln R  = \frac{E_a}{R_u} \cdot \dfrac{1}{T} + \ln R_0
         \end{equation}
 
         The Samsung INR21700 30T 3Ah Li-ion Battery Dataset contains experimental data at various temperatures. Using this dataset again, we perform a 
@@ -48,6 +49,20 @@
             \caption{3D Surface Fitting of Resistance with Temperature and SoC}
         \end{figure}
 
+        If we consider the temperature effect, the simulation heatmap of discharge time from $100\%$ SoC under different power load and temperature will 
+        be as follows: 
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.6\linewidth]{depletion_time_heatmap.png}
+            \caption{Heatmap of Discharge Time with Power Load and Temperature}
+        \end{figure}
+
+        It can be observed that battery behaves badly at low temperatures, and the discharge time decreases significantly as temperature drops. However,
+        although high temperature improves battery short-term performance, it also accelerates battery degradation over time. Therefore, in practical 
+        applications, maintaining an optimal temperature range is crucial for battery longevity and performance.
+
+        %TODO: Battery degradation model with temperature
+
     \subsection{Battery in Different Work Loads}
 
     \subsection{Heat Transfer Model in High-Performance Scenarios}
@@ -61,13 +76,27 @@
         constant). With Newton's law of cooling, we have:
         \begin{equation}
             \label{Law of cooling}
-            Q = h A (T - T_{env}) + C \frac{dT}{dt}
+            Q = 2Ah (T - T_{env}) + C \frac{dT}{dt}
         \end{equation}
         
         $Q$ can be expressed by the Joule's law as:
         \begin{equation}
-            Q = I^2 R_{inter} = I^2 (R_0 + R_1 + R_2)
+            Q = Q_{battery} + Q_{processor} + Q_{other}
         \end{equation}
+
+        $Q_{battery}$ can be further expressed with the Joule's law:
+        \begin{equation}
+            Q_{battery} = I^2 R_{inter} = I^2 (R_0 + R_1 + R_2)
+        \end{equation}
+
+        $Q_{processor}$ often is the major part of heat generation, because processors are often energy-intensive and almost all consumed energy is 
+        converted to heat. Here we model $Q_{processor}$ as a part of total power consumption of the device:
+        \begin{equation}
+            Q_{processor} = \eta P_{total}
+        \end{equation}
+        in which $\eta$ is some coefficient.
+
+        And the other components' heat generation $Q_{other}$ can be assumed to be a constant for simplicity.
 
         Considering that $I$ and $R$ is time-dependent, equation \eqref{Law of cooling} is a first-order linear ODE. The solution is:
         \begin{equation}
@@ -75,8 +104,27 @@
             T = T_{env} + \frac{1}{C} \int_0^t{e^{-\dfrac{2Ah(t - s)}{C}} Q(s) \mathrm{d}s}
         \end{equation}
 
-        Substitute equation \eqref{Relation between T and t} into the Arrhenius equation, we can get the relation between internal resistance and time,
+        Substitute equation \eqref{Relation between T and t} into the Arrhenius' equation, we can get the relation between internal resistance and time,
         and thus analyze how temperature affects battery performance over time in high-performance scenarios.
+
+        The simulation here shows the heatmap of discharge time and max temperature under different power load and environmental temperature. It assumes 
+        if the battery temperature exceeds $50^\circ C$, the device will shutdown to protect the battery. In reality, smartphones often decreases processor
+        frequency to reduce heat generation when temperature is too high, but for simplicity we assume an immediate shutdown here.
+
+        \begin{figure}[H]
+            \centering
+            \begin{subfigure}{0.45\textwidth}
+                \includegraphics[width=\linewidth]{depletion_time_thermal_heatmap.png}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}{0.45\textwidth}
+                \includegraphics[width=\linewidth]{max_temperature_thermal_heatmap.png}
+            \end{subfigure}
+            \caption{Heatmap of Discharge Time and Max Temperature}
+        \end{figure}
+
+        It can be observed that high temperature scenarios are quite dangerous for battery operation. Heavy work loads in $30 ^\circ C$ or higher summer
+        environment can easily lead to battery overheating.
  
     \subsection{Answer to Question 1}
 
