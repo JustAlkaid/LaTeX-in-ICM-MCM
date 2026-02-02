@@ -5,9 +5,9 @@
             \item The battery is kept at a constant environment, so the temperature effects are neglected.
             \item The battery has no energy loss during charging and discharging.
             \item The battery has infinite cycle life, so the degradation effects are neglected and all the parameters are constant.
-            \item The Open Circuit Voltage (OCV) is only related to the SoC, so we can express the SoC as a functionof $U_{OC}$:
+            \item The Open Circuit Voltage (OCV) is only related to the $SOC$, so we can express the $SOC$ as a functionof $U_{OC}$:
                   \begin{equation}
-                    SoC = f(U_{OC})
+                    SOC = f(U_{OC})
                   \end{equation}
                   in which $f(\cdot)$ can be obtained through curve fitting based on experimental data.
             \item The battery behavior is same for charging and discharging. For smartphones, which mostly use \ce{LiCoO2} batteries that has little 
@@ -41,10 +41,10 @@
             I = C_1 \frac{\mathrm{d}U_1}{\mathrm{d}t} + \frac{U_1}{R_1} = C_2 \frac{\mathrm{d}U_2}{\mathrm{d}t} + \frac{U_2}{R_2}
         \end{equation}
 
-        Differentiateing the SoC's definition with respect to time, we get: %TODO: SoC definition reference
+        Differentiateing the $SOC$'s definition with respect to time, we get: %TODO: SOC definition reference
         \begin{equation}
-            \label{differential_equation_SoC_with_current}
-            \frac{\mathrm{d}(SoC)}{\mathrm{d}t} = -\frac{I}{Q_{max}}
+            \label{differential_equation_SOC_with_current}
+            \frac{\mathrm{d}(SOC)}{\mathrm{d}t} = -\frac{I}{Q_{max}}
         \end{equation}
         where $Q_{max}$ is the maximum capacity of the battery.
 
@@ -54,7 +54,7 @@
             \renewcommand{\arraystretch}{2}
             \frac{\mathrm{d}}{\mathrm{d}t}
             \begin{bmatrix}
-                SoC  \\
+                SOC  \\
                 U_1  \\
                 U_2
             \end{bmatrix}
@@ -65,7 +65,7 @@
                 0                      & 0                        & -\dfrac{1}{R_{2} C_{2}}
             \end{bmatrix}
             \begin{bmatrix}
-                SoC  \\
+                SOC  \\
                 U_1 \\
                 U_2
             \end{bmatrix}
@@ -106,11 +106,11 @@
     \subsection{Parameter Estimation}
         The Hybrid Pulse Power Characterization (HPPC) test is commonly used for this purpose. The test is conducted with steps as follows:
         \begin{enumerate}
-            \item The battery is first fully charged to $100\%$ SoC in ways the manufacturer recommends.
+            \item The battery is first fully charged to $100\%$ $SOC$ in ways the manufacturer recommends.
             \item After resting for a certain period(e.g. 1 hour), the battery is discharged with a constant current pulse (e.g., $0.5C$) for a short 
                   duration (e.g., $10s$). The voltage response is recorded.
-            \item Then discharge the battery to another selected SoC point (e.g., $90\%$).
-            \item Repeat steps 2 and 3 until the battery reaches a low SoC point (e.g., $10\%$) or the maximum discharge limit the manufacturer specifies.
+            \item Then discharge the battery to another selected $SOC$ point (e.g., $90\%$).
+            \item Repeat steps 2 and 3 until the battery reaches a low $SOC$ point (e.g., $10\%$) or the maximum discharge limit the manufacturer specifies.
             \item If needed, repeat similar steps for charging pulses.
         \end{enumerate}
         The resting step between pulses allows the exponential term in equation \eqref{Open-circuit terminal voltage solution} to decay to zero, so 
@@ -140,7 +140,7 @@
                     \end{equation}
 
                     By least squares fitting of \eqref{R_C_Estimation} to the voltage response data during each pulse, we can estimate the values of
-                    $R_1, C_1$ and $R_2, C_2$ at different SoC points.
+                    $R_1, C_1$ and $R_2, C_2$ at different $SOC$ points.
             \item \textbf{Estimate $Q_{max}$}: 
                     The maximum capacity $Q_{max}$ can be estimated by integrating the current over the full discharge cycle:
                     \begin{equation}
@@ -189,16 +189,16 @@
             \label{fig:parameter_estimation_results}
         \end{figure}
 
-        6-degree polynomial is used to fit the OCV-SOC curve, cubic functions are used to fit the $C_1, C_2$, and double exponential functions 
+        6-degree polynomial is used to fit the OCV-$SOC$ curve, cubic functions are used to fit the $C_1, C_2$, and double exponential functions 
         $y = A_1 e^{B_1 x} + A_2 e^{B_2 x} + C$ are used to fit the $R_0, R_1, R_2$ curves. 
 
-        As the fitting result shows, the Ohm resistance $R_0$ increases significantly when SoC is low, which may be the main reason for voltage drop and 
-        device shutdown. Later we will verify this conclusion. Polarization resistances $R_1, R_2$ also increase when SoC is low, indicating the battery's 
-        internal electrochemical processes are hindered. And Polarization capacitances $C_1, C_2$ decrease when SoC is low, meaning that the battery's
-        ability to respond to load changes is weakened.
+        As the fitting result shows, the Ohm resistance $R_0$ increases significantly when $SOC$ is low, which may be the main reason for voltage drop and 
+        device shutdown. Later we will verify this conclusion. Polarization resistances $R_1, R_2$ also increase when $SOC$ is low, indicating the 
+        battery's internal electrochemical processes are hindered. And Polarization capacitances $C_1, C_2$ decrease when $SOC$ is low, meaning that the 
+        battery's ability to respond to load changes is weakened.
 
-        Noticed that $C_1, C_2$ drop to zero when SoC is low, which means the Thevenin model is not valid in that region. However, the smartphone will 
-        actually shutdown before the battery reaches such low SoC, because the output voltage will be too low to power the device.
+        Noticed that $C_1, C_2$ drop to zero when $SOC$ is low, which means the Thevenin model is not valid in that region. However, the smartphone will 
+        actually shutdown before the battery reaches such low $SOC$, because the output voltage will be too low to power the device.
     \subsection{Simulations}
         With proper model parameters, we can do numerical simulations of the battery behavior under different load profiles. 2 simplified load profiles
         are considered here: 
@@ -208,9 +208,9 @@
         \end{itemize}
 
         \subsubsection{Constant current}
-            Since the current is constant, equation \eqref{differential_equation_SoC_with_current} can be directly integrated to get the SoC at time $t$:
+            Since the current is constant, equation \eqref{differential_equation_SOC_with_current} can be directly integrated to get the $SOC$ at time $t$:
             \begin{equation}
-                SoC(t) = SoC(0) - \frac{I t}{Q_{max}}
+                SOC(t) = SOC(0) - \frac{I t}{Q_{max}}
             \end{equation}
             
             Then perform Rk45 algorithm to the polarization voltages $U_1, U_2$ with initial conditions $U_1(0) = U_2(0) = 0$, we can get the final result
@@ -220,8 +220,8 @@
             \centering
 
             \begin{subfigure}{0.45\textwidth}
-                \includegraphics[width=\linewidth]{ci_soc_profile.png}
-                \label{fig:soc_profile_constant_current}
+                \includegraphics[width=\linewidth]{ci_SOC_profile.png}
+                \label{fig:SOC_profile_constant_current}
             \end{subfigure} 
             \hfill
             \begin{subfigure}{0.45\textwidth}
@@ -232,7 +232,7 @@
             \caption{Simulation results under constant current load profile}
         \end{figure}
 
-        It can be seen that although the SoC decreases linearly under constant current load, the terminal voltage decreases steadily at first, then 
+        It can be seen that although the $SOC$ decreases linearly under constant current load, the terminal voltage decreases steadily at first, then 
         suddenly drops to a "dead" value, which makes the device shutdown. The phenomenon is consistent with our daily experience.
 
         \subsubsection{Constant power}
@@ -245,8 +245,8 @@
             \begin{figure}[H]
                 \centering
                 \begin{subfigure}{0.45\textwidth}
-                    \includegraphics[width=\linewidth]{cp_soc_profile.png}
-                    \label{fig:soc_profile_constant_power}
+                    \includegraphics[width=\linewidth]{cp_SOC_profile.png}
+                    \label{fig:SOC_profile_constant_power}
                 \end{subfigure} 
                 \hfill
                 \begin{subfigure}{0.45\textwidth}

@@ -33,7 +33,7 @@
 \contentsline {subsubsection}{\numberline {A.2.7}System Mode Power Adjustment}{20}{subsubsection.A.2.7}%
 \contentsline {subsection}{\numberline {A.3}Thermal Parameters}{21}{subsection.A.3}%
 \contentsline {subsection}{\numberline {A.4}Time and Derived Quantities}{21}{subsection.A.4}%
-\contentsline {section}{\numberline {B}Use of AI}{21}{appendix.B}%
+\contentsline {section}{\numberline {B}Use of AI}{22}{appendix.B}%
 \contentsline {subsection}{\numberline {B.1}Battery Dataset Selection}{22}{subsection.B.1}%
 \contentsline {subsection}{\numberline {B.2}Dataset Overview and Statistics}{22}{subsection.B.2}%
 \contentsline {subsection}{\numberline {B.3}Coefficient Reasonableness Analysis}{23}{subsection.B.3}%

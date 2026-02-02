@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  2 FEB 2026 18:21
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  2 FEB 2026 20:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1194,12 +1194,12 @@ File: img/fitting_C2.png Graphic file (type bmp)
 File: img/fitting_R2.png Graphic file (type bmp)
 <img/fitting_R2.png>
  [5] [6]
-File: img/ci_soc_profile.png Graphic file (type bmp)
-<img/ci_soc_profile.png>
+File: img/ci_SOC_profile.png Graphic file (type bmp)
+<img/ci_SOC_profile.png>
 File: img/ci_voltage_profile.png Graphic file (type bmp)
 <img/ci_voltage_profile.png>
-File: img/cp_soc_profile.png Graphic file (type bmp)
-<img/cp_soc_profile.png>
+File: img/cp_SOC_profile.png Graphic file (type bmp)
+<img/cp_SOC_profile.png>
 File: img/cp_voltage_profile.png Graphic file (type bmp)
 <img/cp_voltage_profile.png>
  [7]) (./4-actual_battery.tex [8]
@@ -1226,51 +1226,7 @@ Overfull \hbox (5.38364pt too wide) in paragraph at lines 150--152
 \T1/ppl/m/n/12 an au-dio DSP, digital-to-analog con-ver-sion (DAC), and driv-ing speak-ers or head-phones.
  []
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<img/power_model_coefficients.png, id=347, 424.2249pt x 351.714pt>
-=======
-<<<<<<< HEAD
-<img/power_model_coefficients.png, id=301, 424.2249pt x 351.714pt>
->>>>>>> 73006b8 (add basic data for sensitivity analysis)
-File: img/power_model_coefficients.png Graphic file (type png)
-<use img/power_model_coefficients.png>
-Package pdftex.def Info: img/power_model_coefficients.png  used on input line 181.
-(pdftex.def)             Requested size: 218.51521pt x 181.16425pt.
-<img/power_model_contribution.png, id=348, 424.2249pt x 351.4731pt>
-File: img/power_model_contribution.png Graphic file (type png)
-<use img/power_model_contribution.png>
-Package pdftex.def Info: img/power_model_contribution.png  used on input line 185.
-(pdftex.def)             Requested size: 218.51521pt x 181.04016pt.
-<img/power_model_prediction.png, id=349, 423.7431pt x 351.714pt>
-File: img/power_model_prediction.png Graphic file (type png)
-<use img/power_model_prediction.png>
-Package pdftex.def Info: img/power_model_prediction.png  used on input line 191.
-(pdftex.def)             Requested size: 218.51521pt x 181.37355pt.
-<img/power_model_residuals.png, id=350, 423.7431pt x 351.714pt>
-File: img/power_model_residuals.png Graphic file (type png)
-<use img/power_model_residuals.png>
-Package pdftex.def Info: img/power_model_residuals.png  used on input line 195.
-(pdftex.def)             Requested size: 218.51521pt x 181.37355pt.
-[11] [12 <./img/power_model_coefficients.png> <./img/power_model_contribution.png> <./img/power_model_prediction.png> <./img/power_model_residuals.png>]
-<img/depletion_time_thermal_heatmap.png, id=373, 598.8774pt x 534.3162pt>
-File: img/depletion_time_thermal_heatmap.png Graphic file (type png)
-<use img/depletion_time_thermal_heatmap.png>
-Package pdftex.def Info: img/depletion_time_thermal_heatmap.png  used on input line 277.
-(pdftex.def)             Requested size: 204.85846pt x 182.7739pt.
-<img/max_temperature_thermal_heatmap.png, id=374, 592.614pt x 534.3162pt>
-File: img/max_temperature_thermal_heatmap.png Graphic file (type png)
-<use img/max_temperature_thermal_heatmap.png>
-Package pdftex.def Info: img/max_temperature_thermal_heatmap.png  used on input line 281.
-(pdftex.def)             Requested size: 204.85846pt x 184.70616pt.
- [13]) (./5-sensitivity_analysis.tex) (./6-recommendations.tex) [14 <./img/depletion_time_thermal_heatmap.png> <./img/max_temperature_thermal_heatmap.png>] (./7-appendix.tex
-=======
-=======
->>>>>>> 5b12517 (add numerical disturbance to resistance)
-=======
 [11]
->>>>>>> 7460a98 (add description about open-circuit)
 File: img/power_model_coefficients.png Graphic file (type bmp)
 <img/power_model_coefficients.png>
 File: img/power_model_contribution.png Graphic file (type bmp)
@@ -1464,138 +1420,37 @@ Underfull \hbox (badness 3679) in paragraph at lines 186--186
 []|\T1/ppl/m/n/12 Maximum Tem-
  []
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-) (./8-references.tex) (./9-ai_use_report.tex [18]
+) (./8-references.tex) (./9-ai_use_report.tex [21]
 Overfull \hbox (18.0433pt too wide) in paragraph at lines 36--37
 \T1/ppl/b/n/12 Team's Con-tri-bu-tion: \T1/ppl/m/n/12 Fol-low-ing this ad-vice, we searched for smartphone-specific datasets
  []
 
-[19
+[22
 
-] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2025/11/14 1.11b listings language file
-) [20] [21]
+] (d:/TexLive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+) [23] [24]
 Overfull \hbox (38.7541pt too wide) in paragraph at lines 147--158
  [][] 
  []
 
-) [22] 
-enddocument/afterlastpage (AED): lastpage setting LastPage.
-=======
-) (./8-references.tex) (./9-ai_use_report.tex) [18] 
-=======
-) (./8-references.tex) (./9-ai_use_report.tex) [20] 
->>>>>>> 5b12517 (add numerical disturbance to resistance)
-=======
-) (./8-references.tex) (./9-ai_use_report.tex [21]
-Overfull \hbox (18.0433pt too wide) in paragraph at lines 24--25
-\T1/ppl/b/n/12 Team's Con-tri-bu-tion: \T1/ppl/m/n/12 Fol-low-ing this ad-vice, we searched for smartphone-specific datasets
- []
-
-[22] (d:/TexLive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/02/21 1.10 listings language file
-) [23]
-Overfull \hbox (38.7541pt too wide) in paragraph at lines 135--146
- [][] 
- []
-
-[24]) [25] 
->>>>>>> 7460a98 (add description about open-circuit)
+) [25] 
 enddocument/afterlastpage: lastpage setting LastPage.
->>>>>>> 73006b8 (add basic data for sensitivity analysis)
 (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-<<<<<<< HEAD
-<<<<<<< HEAD
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9A479C1250C1D55D6DE624E01CF33F4A;6978.
- ) 
-Here is how much of TeX's memory you used:
- 37901 strings out of 467533
- 739219 string characters out of 5423669
- 1483034 words of memory out of 5000000
- 65998 multiletter control sequences out of 15000+600000
- 657915 words of font info for 98 fonts, out of 8000000 for 9000
-=======
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: E738FF77CCD21AACEC1325616C01E336;5373
-(rerunfilecheck)             After:  4F8A46BBBE534FB91A0FAF68A0B84FFE;6958.
- ) 
-Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 37331 strings out of 467533
- 732503 string characters out of 5423669
- 1338339 words of memory out of 5000000
- 65452 multiletter control sequences out of 15000+600000
- 657294 words of font info for 96 fonts, out of 8000000 for 9000
->>>>>>> 73006b8 (add basic data for sensitivity analysis)
- 1141 hyphenation exceptions out of 8191
- 98i,13n,108p,822b,1583s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (22 pages, 2689953 bytes).
-PDF statistics:
-<<<<<<< HEAD
- 559 PDF objects out of 1000 (max. 8388607)
- 452 compressed objects within 5 object streams
- 124 named destinations out of 1000 (max. 500000)
- 441 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
- 484 PDF objects out of 1000 (max. 8388607)
- 382 compressed objects within 4 object streams
- 103 named destinations out of 1000 (max. 500000)
- 369 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
- 36483 strings out of 476720
- 719045 string characters out of 5801445
-=======
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 264068F0D5000E46F47A073C91E7269B;8550.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
-<<<<<<< HEAD
- 36529 strings out of 476720
- 720557 string characters out of 5801445
->>>>>>> 5b12517 (add numerical disturbance to resistance)
-=======
- 36780 strings out of 476720
- 724223 string characters out of 5801445
->>>>>>> 7460a98 (add description about open-circuit)
-=======
- 36801 strings out of 476720
- 724961 string characters out of 5801445
->>>>>>> 24de091 (add pulse current model simulation)
+ 36853 strings out of 476720
+ 726027 string characters out of 5801445
  1939842 words of memory out of 5000000
- 58132 multiletter control sequences out of 15000+600000
+ 58184 multiletter control sequences out of 15000+600000
  582302 words of font info for 82 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
-<<<<<<< HEAD
-<<<<<<< HEAD
- 94i,13n,107p,688b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
->>>>>>> a9e8894 (add basic data for sensitivity analysis)
->>>>>>> 73006b8 (add basic data for sensitivity analysis)
-=======
- 94i,13n,107p,766b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
->>>>>>> 5b12517 (add numerical disturbance to resistance)
-=======
  94i,13n,107p,766b,1482s stack positions out of 10000i,1000n,20000p,200000b,200000s
->>>>>>> 7460a98 (add description about open-circuit)
 
 Output written on main.pdf (25 pages).
