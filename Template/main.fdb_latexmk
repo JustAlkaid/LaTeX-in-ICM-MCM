@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1770014672.13358 "d:/Codes/Py/美赛/论文/LaTeX-in-ICM-MCM/Template/main.tex" "main.pdf" "main" 1770014677.7281 0
+["pdflatex"] 1770015544.20899 "d:/Codes/Py/美赛/论文/LaTeX-in-ICM-MCM/Template/main.tex" "main.pdf" "main" 1770015549.89604 0
   "1-introduction.tex" 1769847992 0 d41d8cd98f00b204e9800998ecf8427e ""
   "2-notations.tex" 1769847992 0 d41d8cd98f00b204e9800998ecf8427e ""
   "3-ideal_battery.tex" 1769949832 12689 6cf3b7ea77d35f40b62d7bae4b163d24 ""
-  "4-actual_battery.tex" 1770014663 18829 aecb28a65747132b9209c385e842c880 ""
+  "4-actual_battery.tex" 1770015528 18599 2e6c4f42b69a8f4b1125dc1beaed0ca8 ""
   "5-sensitivity_analysis.tex" 1769847992 0 d41d8cd98f00b204e9800998ecf8427e ""
   "6-recommendations.tex" 1769847992 0 d41d8cd98f00b204e9800998ecf8427e ""
   "7-appendix.tex" 1769973939 8299 d41a9ea1dc6d095cf97012259c061fd3 ""
@@ -298,10 +298,10 @@
   "img/power_model_contribution.png" 1770011727 123287 286f2e46a2be6f07411c583678283055 ""
   "img/power_model_prediction.png" 1770011728 424834 a5d2b088dd14d095cb18caa418ed38ee ""
   "img/power_model_residuals.png" 1770011729 134509 737fe306af212d04e8cfd1e4c3040070 ""
-  "main.aux" 1770014677 12788 ae9c297e9b4360d6241180f3283f8f62 "pdflatex"
-  "main.out" 1770014677 5341 92f307a862119bf50e889484a706a89f "pdflatex"
+  "main.aux" 1770015549 12482 f52fb3d290bf7f15858c35bcadb41489 "pdflatex"
+  "main.out" 1770015549 5075 1c3dc237a873307d8cb77e8eff61cc4b "pdflatex"
   "main.tex" 1769876362 7638 fbfafe2f1dcba3434410599dd1abd151 ""
-  "main.toc" 1770014677 2976 1a65b0c28dfc168239f3228407065552 "pdflatex"
+  "main.toc" 1770015549 2906 1b5f8c6cda4d3950cd091da71c421365 "pdflatex"
   "new_command.tex" 1769847992 328 b3ed1467566f0e0d1c61713c6ab46d1e ""
   (generated)
   "main.aux"
