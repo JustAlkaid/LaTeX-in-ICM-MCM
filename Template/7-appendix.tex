@@ -1,201 +1,119 @@
 \appendix
 \section{Notation}
 
-\subsection{Battery Parameters}
+The following tables summarize all symbols used in this paper.
+
+\renewcommand{\arraystretch}{1.2}
 
 \begin{table}[H]
     \centering
-    \renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{p{3.2cm} p{2cm} p{5.5cm} p{2.2cm}}
+    \caption{Battery, Thermal, and Power Parameters}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{l l l l}
         \hline
-        \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Unit} \\
+        \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Unit/Range} \\
         \hline
-        Internal Resistance          & $R$       & Total internal resistance of battery    & $\Omega$                                          \\
-        Ohm Resistance               & $R_0$     & Ionic and electronic resistance         & $\Omega$                                          \\
-        Polarization Resistance 1    & $R_1$     & Charge transfer resistance              & $\Omega$                                          \\
-        Polarization Resistance 2    & $R_2$     & Concentration polarization              & $\Omega$                                          \\
-        Activation Energy            & $E_a$     & Energy barrier for charge transfer      & $\mathrm{kJ/mol}$                                 \\
-        Universal Gas Constant       & $R_u$     & Physical constant in Arrhenius equation & $8.314 \mathrm{J}/(\mathrm{mol}\cdot \mathrm{K})$ \\
-        Battery Temperature          & $T$       & Real-time battery temperature           & $\mathrm{K}$                                      \\
-        Environmental Temperature    & $T_{env}$ & Ambient temperature (constant)          & $\mathrm{K}$                                      \\
-        State of Charge              & $SOC$     & Battery capacity percentage             & $0 \sim 100\%$                                    \\
-        Discharge Current            & $I$       & Current flowing out during discharge    & $\mathrm{A}$                                      \\
-        Battery Voltage              & $V$       & Voltage output by battery               & $\mathrm{V}$                                      \\
-        Battery Capacity             & $C_{cap}$ & Total energy capacity                   & $\mathrm{Ah}$                                     \\
+        \multicolumn{4}{l}{\textit{Battery Electrical Parameters}} \\
+        \hline
+        State of Charge          & $SOC$     & Battery capacity percentage remaining         & $0 \sim 1$     \\
+        Open Circuit Voltage     & $U_{OC}$  & Voltage when no current flows                 & V              \\
+        Terminal Voltage         & $U_t$     & Measured voltage at battery terminals         & V              \\
+        Discharge Current        & $I$       & Current flowing out during discharge          & A              \\
+        Maximum Capacity         & $Q_{max}$ & Total charge capacity of battery              & Ah             \\
+        Ohmic Resistance         & $R_0$     & Ionic and electronic conduction resistance    & $\Omega$       \\
+        Polarization Resistance 1 & $R_1$    & Electrochemical polarization (fast)           & $\Omega$       \\
+        Polarization Resistance 2 & $R_2$    & Concentration polarization (slow)             & $\Omega$       \\
+        Polarization Capacitance 1 & $C_1$   & Capacitance for fast dynamics                 & F              \\
+        Polarization Capacitance 2 & $C_2$   & Capacitance for slow dynamics                 & F              \\
+        Polarization Voltage 1   & $U_1$     & Voltage across $R_1$-$C_1$ branch             & V              \\
+        Polarization Voltage 2   & $U_2$     & Voltage across $R_2$-$C_2$ branch             & V              \\
+        Time Constant 1          & $\tau_1$  & $R_1 C_1$, fast response time                 & s              \\
+        Time Constant 2          & $\tau_2$  & $R_2 C_2$, slow response time                 & s              \\
+        \hline
+        \multicolumn{4}{l}{\textit{Thermal Parameters}} \\
+        \hline
+        Activation Energy        & $E_a$           & Energy barrier in Arrhenius equation          & kJ/mol             \\
+        Universal Gas Constant   & $R_u$           & Physical constant (8.314)                     & J/(mol$\cdot$K)    \\
+        Battery Temperature      & $T$             & Real-time battery temperature                 & K                  \\
+        Environment Temperature  & $T_{env}$       & Ambient temperature (constant)                & K                  \\
+        Maximum Temperature      & $T_{max}$       & Peak temperature during operation             & K                  \\
+        Internal Heat Power      & $Q$             & Total heat generation rate                    & W                  \\
+        Battery Joule Heat       & $Q_{battery}$   & Heat from internal resistance                 & W                  \\
+        Processor Heat           & $Q_{processor}$ & Heat from CPU and circuits                    & W                  \\
+        Other Heat               & $Q_{other}$     & Heat from other modules                       & W                  \\
+        Heat Transfer Coefficient & $h$            & Convective heat transfer coefficient          & W/(m$^2\cdot$K)    \\
+        Surface Area             & $A$             & Heat dissipation area of device               & m$^2$              \\
+        Heat Capacity            & $C$             & Thermal mass of battery system                & J/K                \\
+        Heat Efficiency          & $\eta$          & Fraction of electrical power to heat          & --                 \\
+        \hline
+        \multicolumn{4}{l}{\textit{Power Components}} \\
+        \hline
+        Total Power              & $P_{total}$   & Sum of all power components                   & W              \\
+        Screen Power             & $P_{screen}$  & Display system power consumption              & W              \\
+        CPU Power                & $P_{CPU}$     & Processor power consumption                   & W              \\
+        Network Power            & $P_{network}$ & Wireless communication power                  & W              \\
+        GPS Power                & $P_{GPS}$     & GPS receiver power consumption                & W              \\
+        Audio Power              & $P_{audio}$   & Audio playback power consumption              & W              \\
+        Mode Adjustment          & $P_{mode}$    & Power adjustment from system modes            & W              \\
         \hline
     \end{tabular}
+    }
 \end{table}
 
-\subsection{Power Consumption Parameters}
-
-\subsubsection{Total Power Model}
-
 \begin{table}[H]
     \centering
-    \renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{p{3.2cm} p{2cm} p{5.5cm} p{2.2cm}}
+    \caption{State Variables and Model Coefficients}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{l l l l}
         \hline
-        \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Unit} \\
+        \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Unit/Range} \\
         \hline
-        Total Power & $P_{total}$ & Sum of all power components & $\mathrm{W}$ \\
+        \multicolumn{4}{l}{\textit{State Variables}} \\
         \hline
-    \end{tabular}
-\end{table}
-
-\subsubsection{Screen Power}
-
-\begin{table}[H]
-    \centering
-    \renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{p{3.2cm} p{2cm} p{5.5cm} p{2.2cm}}
+        Screen State             & $S$           & Display on/off indicator                      & $\{0, 1\}$     \\
+        Brightness Level         & $B$           & Display brightness value                      & $0 \sim 255$   \\
+        CPU Utilization          & $U$           & Fraction of CPU active time                   & $0 \sim 1$     \\
+        Big Core Frequency       & $f_{big}$     & High-performance core frequency               & GHz            \\
+        Small Core Frequency     & $f_{small}$   & Efficiency core frequency                     & GHz            \\
+        Network Type             & $M$           & 0: WiFi, 1: Cellular                          & $\{0, 1\}$     \\
+        GPS Activity             & $G$           & GPS on/off indicator                          & $\{0, 1\}$     \\
+        Audio Playback           & $A$           & Audio active indicator                        & $\{0, 1\}$     \\
+        Power Saving Mode        & $E$           & Power saving mode on/off                      & $\{0, 1\}$     \\
+        Flight Mode              & $F$           & Flight mode on/off                            & $\{0, 1\}$     \\
         \hline
-        \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Range/Unit} \\
+        \multicolumn{4}{l}{\textit{Model Coefficients ($\alpha_S, \alpha_B, ... > 0$; $\alpha_E, \alpha_F < 0$)}} \\
         \hline
-        Screen Power      & $P_{screen}$ & Power consumption of display system  & $\mathrm{W}$ \\
-        Screen State      & $S$          & On/off indicator (0: off, 1: on)     & $\{0, 1\}$   \\
-        Brightness Level  & $B$          & Display brightness value             & $0 \sim 255$ \\
-        Base Coeff.       & $\alpha_S$   & Base power when screen on            & $\mathrm{W}$ \\
-        Brightness Coeff. & $\alpha_B$   & Additional power per brightness unit & $\mathrm{W}$ \\
+        Screen Base Coefficient  & $\alpha_S$      & Base power when screen on                   & W              \\
+        Brightness Coefficient   & $\alpha_B$      & Power per brightness unit                   & W              \\
+        CPU Utilization Coefficient & $\alpha_U$   & Power per unit utilization                  & W              \\
+        Big Core Coefficient     & $\alpha_{big}$  & Big core power at max frequency             & W              \\
+        Small Core Coefficient   & $\alpha_{small}$& Small core power at max frequency           & W              \\
+        Network Coefficient      & $\alpha_M$      & Cellular power vs WiFi baseline             & W              \\
+        GPS Coefficient          & $\alpha_G$      & GPS active power                            & W              \\
+        Audio Coefficient        & $\alpha_A$      & Audio playback power                        & W              \\
+        Power Saving Coefficient & $\alpha_E$      & Power reduction (negative)                  & W              \\
+        Flight Mode Coefficient  & $\alpha_F$      & Power reduction (negative)                  & W              \\
         \hline
-    \end{tabular}
-\end{table}
-
-\subsubsection{CPU Power}
-
-\begin{table}[H]
-    \centering
-    \renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{p{3.2cm} p{2cm} p{5.5cm} p{2.2cm}}
+        \multicolumn{4}{l}{\textit{Battery Aging}} \\
         \hline
-        \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Range/Unit} \\
+        Current Capacity         & $Q(n)$          & Capacity after $n$ cycles                   & Ah             \\
+        Initial Capacity         & $Q_0$           & Original battery capacity                   & Ah             \\
+        Cycle Number             & $n$             & Number of full equivalent cycles            & --             \\
+        Capacity Fade Rate       & $\alpha$        & Capacity loss per cycle                     & cycle$^{-1}$   \\
         \hline
-        CPU Power            & $P_{CPU}$        & Power consumption of CPU            & $\mathrm{W}$   \\
-        CPU Utilization      & $U$              & Fraction of time CPU is active      & $0 \sim 1$     \\
-        Big Core Frequency   & $f_{big}$        & Frequency of high-performance cores & $\mathrm{GHz}$ \\
-        Small Core Frequency & $f_{small}$      & Frequency of efficiency cores       & $\mathrm{GHz}$ \\
-        Max Big Core Freq.   & $f_{max,big}$    & Maximum frequency of big cores      & $\mathrm{GHz}$ \\
-        Max Small Core Freq. & $f_{max,small}$  & Maximum frequency of small cores    & $\mathrm{GHz}$ \\
-        Utilization Coeff.   & $\alpha_U$       & Power per unit utilization          & $\mathrm{W}$   \\
-        Big Core Coeff.      & $\alpha_{big}$   & Power consumption at max frequency  & $\mathrm{W}$   \\
-        Small Core Coeff.    & $\alpha_{small}$ & Power consumption at max frequency  & $\mathrm{W}$   \\
+        \multicolumn{4}{l}{\textit{Time and Evaluation Metrics}} \\
         \hline
-    \end{tabular}
-\end{table}
-
-\subsubsection{Network Power}
-
-\begin{table}[H]
-    \centering
-    \renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{p{3.2cm} p{2cm} p{5.5cm} p{2.2cm}}
-        \hline
-        \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Range/Unit} \\
-        \hline
-        Network Power         & $P_{network}$ & Wireless communication power & $\mathrm{W}$ \\
-        Network Type          & $M$           & Type (0: WiFi, 1: Cellular)  & $\{0, 1\}$   \\
-        Mobile Network Coeff. & $\alpha_M$    & Cellular power vs WiFi       & $\mathrm{W}$ \\
+        Time                     & $t$                 & Elapsed time from start                 & s              \\
+        Battery Runtime          & $T_{\text{runtime}}$& Time until battery depletion            & h              \\
+        Energy Capacity          & $E_{capacity}$      & Total energy capacity                   & Wh             \\
+        Coefficient of Determination & $R^2$           & Variance explained by model             & $0 \sim 1$     \\
+        Mean Absolute Error      & MAE                 & Average absolute prediction error       & same as $y$    \\
+        Root Mean Square Error   & RMSE                & Root of average squared error           & same as $y$    \\
         \hline
     \end{tabular}
-\end{table}
-
-\subsubsection{GPS Power}
-
-\begin{table}[H]
-    \centering
-    \renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{p{3.2cm} p{2cm} p{5.5cm} p{2.2cm}}
-        \hline
-        \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Range/Unit} \\
-        \hline
-        GPS Power        & $P_{GPS}$  & GPS receiver power               & $\mathrm{W}$ \\
-        GPS Activity     & $G$        & On/off indicator (0: off, 1: on) & $\{0, 1\}$   \\
-        GPS Power Coeff. & $\alpha_G$ & GPS active power                 & $\mathrm{W}$ \\
-        \hline
-    \end{tabular}
-\end{table}
-
-\subsubsection{Audio Power}
-
-\begin{table}[H]
-    \centering
-    \renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{p{3.2cm} p{2cm} p{5.5cm} p{2.2cm}}
-        \hline
-        \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Range/Unit} \\
-        \hline
-        Audio Power        & $P_{audio}$ & Audio playback power             & $\mathrm{W}$ \\
-        Audio Playback     & $A$         & Active indicator (0: no, 1: yes) & $\{0, 1\}$   \\
-        Audio Power Coeff. & $\alpha_A$  & Audio playback power             & $\mathrm{W}$ \\
-        \hline
-    \end{tabular}
-\end{table}
-
-\subsubsection{System Mode Power Adjustment}
-
-\begin{table}[H]
-    \centering
-    \renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{p{3.2cm} p{2cm} p{5.5cm} p{2.2cm}}
-        \hline
-        \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Range/Unit} \\
-        \hline
-        Mode Adjustment     & $P_{mode}$ & Power adjustment from system modes & $\mathrm{W}$ \\
-        Power Saving Mode   & $E$ & On/off indicator (0: off, 1: on)          & $\{0, 1\}$   \\
-        Flight Mode         & $F$ & On/off indicator (0: off, 1: on)          & $\{0, 1\}$   \\
-        Power Saving Coeff. & $\alpha_E$ & Power reduction from power saving  & $\mathrm{W}$ \\
-        Flight Mode Coeff.  & $\alpha_F$ & Power reduction from flight mode   & $\mathrm{W}$ \\
-        \hline
-    \end{tabular}
+    }
 \end{table}
 
 \noindent
-Note: The coefficients $\alpha_S, \alpha_B, \alpha_U, \alpha_{big}, \alpha_{small}, \alpha_M, \alpha_G, \alpha_A$ are positive (power increase), while $\alpha_E, \alpha_F$ are negative (power reduction).
+\textbf{Notes:} MAE $= \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y}_i|$, RMSE $= \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}$, where $y_i$ and $\hat{y}_i$ denote actual and predicted values.
 
-\subsection{Thermal Parameters}
-
-\begin{table}[H]
-    \centering
-    \renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{p{3.2cm} p{2cm} p{5.5cm} p{2.2cm}}
-        \hline
-        \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Unit} \\
-        \hline
-        Internal Heat Power  & $Q$             & Total heat generation rate           & $\mathrm{W}$                                 \\
-        Battery Joule Heat   & $Q_{battery}$   & Joule heat from internal resistance  & $\mathrm{W}$                                 \\
-        Processor Heat       & $Q_{processor}$ & Heat from CPU and circuits           & $\mathrm{W}$                                 \\
-        Other Heat           & $Q_{other}$     & Heat from other modules              & $\mathrm{W}$                                 \\
-        Heat Transfer Coeff. & $h$             & Convective heat transfer coefficient & $\mathrm{W}/(\mathrm{m}^2 \cdot \mathrm{K})$ \\
-        Surface Area         & $A$             & Heat dissipation area                & $\mathrm{m}^2$                               \\
-        Heat Capacity        & $C$             & Thermal mass of battery              & $\mathrm{J/K}$                               \\
-        Heat Efficiency      & $\eta$          & Fraction of power to heat            & N/A                                          \\
-        \hline
-    \end{tabular}
-\end{table}
-
-\subsection{Time and Derived Quantities}
-
-\begin{table}[H]
-    \centering
-    \renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{p{3.2cm} p{2cm} p{5.5cm} p{2.2cm}}
-        \hline
-        \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Unit} \\
-        \hline
-        Time                & $t$             & Elapsed time from start           & $\mathrm{s}$ \\
-        Discharge Time      & $t_{discharge}$ & Time to shutdown voltage          & $\mathrm{h}$ \\
-        Maximum Temperature & $T_{max}$       & Peak temperature during discharge & $\mathrm{K}$ \\
-        \hline
-    \end{tabular}
-\end{table}
-
-\noindent
-Typical Values (Samsung INR21700 30T 3Ah Li-ion Battery):
-\begin{itemize}
-    \item Heat capacity: $C = 160 \mathrm{J/K}$
-    \item Convective heat transfer coefficient: $h = 5 \mathrm{W}/(\mathrm{m}^2 \cdot \mathrm{K})$
-    \item Smartphone surface area: $A = 200 \mathrm{cm}^2$
-    \item Processor heat fraction: $\eta = 0.5$
-    \item Other heat generation: $Q_{other} = 0.8 \mathrm{W}$
-    \item Shutdown voltage: $V_{min} = 3.2 \mathrm{V}$ (device stops regardless of SOC)
-    \item Thermal shutdown temperature: $T_{max} = 50 \mathrm{^\circ C}$ (protection limit)
-\end{itemize}
