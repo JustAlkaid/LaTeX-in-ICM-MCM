@@ -16,17 +16,26 @@
 
     \subsection{Thevenin Model}
         A Li-ion battery system can be extremely complex, involving electrochemical, thermal and mechanical processes. However, for system-level studies,
-        an equivalent circuit model is often used to represent the battery behavior~\cite{ecm_model}. The Thevenin model is a widely used equivalent circuit model that 
-        captures the dynamic response of the battery voltage during charge and discharge cycles. The model is described as follows:
+        an equivalent circuit model is often used to represent the battery behavior~\cite{ecm_model}. The 2-order Thevenin model is a widely used 
+        equivalent circuit model that captures the dynamic response of the battery voltage during charge and discharge cycles. The model is described
+        as follows:
 
-        % \begin{figure}[H]
-        %     \centering
-        %     \includegraphics[width=0.5\textwidth]{Thevenin_model.png}   % TODO: figure
-        %     \caption{Thevenin Model of a Li-ion Battery}
-        %     \label{fig:Thevenin_model}
-        % \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{Thevenin Model.png}
+            \caption{Thevenin Model Circuit}
+        \end{figure}
 
-        % TODO：极化效应
+        In electrochemistry, the polarization effects are often divided into two main categories: electrochemical polarization and concentration
+        polarization. The former is caused by the charge transfer resistance at the electrode/electrolyte interface, while the latter is due to the mass
+        transport limitations within the electrode materials. In the Thevenin model, these two polarization effects are represented by two RC networks: 
+        $R_1, C_1$ for electrochemical polarization and $R_2, C_2$ for concentration polarization.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{battery.png}
+            \caption{Battery and Its Model Equivalent Circuit}
+        \end{figure}
 
         The relationship between $U_{OC}$ and other parameters in the Thevenin model can be expressed with Kirchhoff's laws:
         \begin{equation}

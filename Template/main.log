@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  2 FEB 2026 23:02
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  2 FEB 2026 23:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1170,11 +1170,11 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
  (d:/TexLive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2])
+))
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [3] (./1-introduction.tex
+ [2] (./1-introduction.tex
 File: img/animate.png Graphic file (type bmp)
 <img/animate.png>
 
@@ -1182,13 +1182,21 @@ Overfull \hbox (12.15152pt too wide) in paragraph at lines 21--23
 []\T1/ppl/b/n/12 Sensitivity Anal-y-sis\T1/ppl/m/n/12 : In-tro-duc-ing fluc-tu-a-tions of us-age pat-terns or mak-ing changes
  []
 
-) (./2-notations.tex) (./3-ideal_battery.tex [4
+File: img/flowchart.png Graphic file (type bmp)
+<img/flowchart.png>
+) (./2-notations.tex [3
 
-]
+]) (./3-ideal_battery.tex
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 5.
  (d:/TexLive/2024/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [5] [6]
+)
+File: img/Thevenin Model.png Graphic file (type bmp)
+<img/Thevenin Model.png>
+ [4]
+File: img/battery.png Graphic file (type bmp)
+<img/battery.png>
+ [5] [6]
 File: img/fitting_OCV.png Graphic file (type bmp)
 <img/fitting_OCV.png>
 File: img/fitting_R0.png Graphic file (type bmp)
@@ -1277,162 +1285,7 @@ Overfull \hbox (1.87892pt too wide) in paragraph at lines 64--191
 []\T1/ppl/m/n/12 By com-bin-ing short-term power man-age-ment with long-term health prac-tices, users
  []
 
-[21] (./7-appendix.tex
-Underfull \hbox (badness 10000) in paragraph at lines 13--13
-[]|\T1/ppl/m/n/12 Internal Re-sis-
- []
-
-
-Underfull \hbox (badness 3375) in paragraph at lines 13--13
-[]|\T1/ppl/m/n/12 Total in-ter-nal re-sis-tance of
- []
-
-
-Underfull \hbox (badness 6510) in paragraph at lines 14--14
-[]|\T1/ppl/m/n/12 Ionic and elec-tronic re-sis-
- []
-
-
-Underfull \hbox (badness 3386) in paragraph at lines 15--15
-[]|\T1/ppl/m/n/12 Polarization Re-
- []
-
-
-Underfull \hbox (badness 3386) in paragraph at lines 16--16
-[]|\T1/ppl/m/n/12 Polarization Re-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--17
-[]|\T1/ppl/m/n/12 Activation En-
- []
-
-
-Underfull \hbox (badness 7631) in paragraph at lines 17--17
-[]|\T1/ppl/m/n/12 Energy bar-rier for charge
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--18
-[]|\T1/ppl/m/n/12 Universal Gas
- []
-
-
-Underfull \hbox (badness 1275) in paragraph at lines 18--18
-[]|\T1/ppl/m/n/12 Physical con-stant in Ar-rhe-
- []
-
-
-Overfull \hbox (2.91174pt too wide) in paragraph at lines 18--19
-[]|$\OT1/cmr/m/n/12 8\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 314J\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 ([] \OMS/cmsy/m/n/12 ^^A
- []
-
-
-Underfull \hbox (badness 5771) in paragraph at lines 19--19
-[]|\T1/ppl/m/n/12 Real-time bat-tery tem-per-a-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
-[]|\T1/ppl/m/n/12 Environmental
- []
-
-
-Underfull \hbox (badness 3302) in paragraph at lines 20--20
-[]|\T1/ppl/m/n/12 Ambient tem-per-a-ture (con-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--22
-[]|\T1/ppl/m/n/12 Discharge Cur-
- []
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 54--54
-[]|\T1/ppl/m/n/12 Power con-sump-tion of dis-
- []
-
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-[]|\T1/ppl/m/n/12 Big Core Fre-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-[]|\T1/ppl/m/n/12 Frequency of high-
- []
-
-
-Underfull \hbox (badness 1509) in paragraph at lines 75--75
-[]|\T1/ppl/m/n/12 Small Core Fre-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
-[]|\T1/ppl/m/n/12 Max Big Core
- []
-
-
-Underfull \hbox (badness 1019) in paragraph at lines 76--76
-[]|\T1/ppl/m/n/12 Maximum fre-quency of big
- []
-
-
-Underfull \hbox (badness 2680) in paragraph at lines 80--80
-[]|\T1/ppl/m/n/12 Small Core Co-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-[]|\T1/ppl/m/n/12 Wireless com-mu-ni-ca-tion
- []
-
-
-Underfull \hbox (badness 1558) in paragraph at lines 112--112
-[]|\T1/ppl/m/n/12 GPS Power Co-
- []
-
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
-[]|\T1/ppl/m/n/12 Audio Power
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
-[]|\T1/ppl/m/n/12 Mode Ad-just-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
-[]|\T1/ppl/m/n/12 Power Sav-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 145--145
-[]|\T1/ppl/m/n/12 Power Sav-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--163
-[]|\T1/ppl/m/n/12 Internal Heat
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
-[]|\T1/ppl/m/n/12 Battery Joule
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--167
-[]|\T1/ppl/m/n/12 Heat Trans-fer
- []
-
-[24]
-Underfull \hbox (badness 3679) in paragraph at lines 186--186
-[]|\T1/ppl/m/n/12 Maximum Tem-
- []
-
-) (./8-references.tex [25]
+[21] (./7-appendix.tex [22]) (./8-references.tex [23]
 Underfull \hbox (badness 1184) in paragraph at lines 13--17
 []\T1/ppl/m/n/12 Ouyang, Q., Chen, J., & Zheng, J. (2023). State of Charge Es-ti-ma-tion for
  []
@@ -1442,21 +1295,21 @@ Underfull \hbox (badness 1460) in paragraph at lines 27--31
 \T1/ppl/m/n/12 Data Por-tal. [][] $\T1/pcr/m/n/12 h t t p s : / / d a t a . n a s a . g o v / d a t a s e t / l i -[] i o n -[] b a t t e r y -[] a g i
  []
 
-) (./9-ai_use_report.tex [26]
+) (./9-ai_use_report.tex [24]
 Overfull \hbox (18.0433pt too wide) in paragraph at lines 36--37
 \T1/ppl/b/n/12 Team's Con-tri-bu-tion: \T1/ppl/m/n/12 Fol-low-ing this ad-vice, we searched for smartphone-specific datasets
  []
 
-[27
+[25
 
 ] (d:/TexLive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
-) [28] [29]
+) [26] [27]
 Overfull \hbox (38.7541pt too wide) in paragraph at lines 147--158
  [][] 
  []
 
-) [30] 
+) [28] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -1464,15 +1317,15 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 478A1CD8FF2C14CB4F1D712106DA0702;9784.
+(rerunfilecheck)             Checksum: 3BE22C1C1829414AD5D1E464D9782BF1;7886.
  ) 
 Here is how much of TeX's memory you used:
- 36903 strings out of 476720
- 727270 string characters out of 5801445
- 1939842 words of memory out of 5000000
- 58231 multiletter control sequences out of 15000+600000
+ 36934 strings out of 476720
+ 727980 string characters out of 5801445
+ 1943842 words of memory out of 5000000
+ 58259 multiletter control sequences out of 15000+600000
  582302 words of font info for 82 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 94i,13n,107p,766b,1482s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,14n,107p,766b,1482s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (30 pages).
+Output written on main.pdf (28 pages).
