@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  2 FEB 2026 08:59
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  2 FEB 2026 10:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1229,10 +1229,7 @@ Overfull \hbox (5.38364pt too wide) in paragraph at lines 150--152
 
 File: img/power_model_fitting.png Graphic file (type bmp)
 <img/power_model_fitting.png>
-[11]
-File: img/usage_scenarios_table.png Graphic file (type bmp)
-<img/usage_scenarios_table.png>
- [12]
+[11] [12]
 File: img/depletion_time_thermal_heatmap.png Graphic file (type bmp)
 <img/depletion_time_thermal_heatmap.png>
 File: img/max_temperature_thermal_heatmap.png Graphic file (type bmp)
@@ -1413,10 +1410,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6319688CB921A75463DA18F357389C29;6571.
  ) 
 Here is how much of TeX's memory you used:
- 36456 strings out of 476720
- 718083 string characters out of 5801445
+ 36446 strings out of 476720
+ 717738 string characters out of 5801445
  1939842 words of memory out of 5000000
- 57797 multiletter control sequences out of 15000+600000
+ 57788 multiletter control sequences out of 15000+600000
  581980 words of font info for 81 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  94i,13n,107p,688b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s

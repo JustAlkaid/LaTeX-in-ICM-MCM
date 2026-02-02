@@ -185,16 +185,27 @@
         \end{figure}
 
         \subsubsection{Usage Scenario Simulation}
-        The model allows us to estimate the smartphone's power consumption under various typical usage scenarios.
-
-        %TODO: replace figure with table
-
-        \begin{figure}[H]
+        The model allows us to estimate the smartphone's power consumption under various typical usage scenarios. Here are some typical scenarios and 
+        their estimated power consumption:
+        \begin{table}[H]
             \centering
-            \includegraphics[width=0.9\linewidth]{usage_scenarios_table.png}
-            \caption{Power consumption under different usage scenarios}
-            \label{fig:usage_scenarios}
-        \end{figure}
+            \label{tab:power_consumption}
+            \resizebox{\columnwidth}{!}{
+                \begin{tabular}{@{}lccccccccc@{}}
+                \toprule
+                \textbf{Scenario} & \textbf{Screen} & \textbf{Brightness} & \textbf{CPU} & \textbf{Big Core} & \textbf{Small Core} & \textbf{Mobile} & \textbf{GPS} & \textbf{Audio} & \textbf{Total Power} \\
+                & \textbf{(S)} & \textbf{(B/255)} & \textbf{Usage} & \textbf{Freq} & \textbf{Freq} & \textbf{Network} & & & \textbf{(W)} \\
+                \midrule
+                Standby        & Off & 0\%   & 10\% & 10\%  & 10\%  & No  & Off & Off & 0.09 \\
+                Web Browsing   & On  & 50\%  & 50\% & 30\%  & 30\%  & No  & Off & Off & 1.08 \\
+                Video Streaming& On  & 71\%  & 40\% & 40\%  & 30\%  & No  & Off & On  & 1.57 \\
+                Navigation     & On  & 100\% & 50\% & 50\%  & 40\%  & Yes & On  & On  & 2.69 \\
+                Gaming         & On  & 100\% & 90\% & 100\% & 100\% & Yes & Off & On  & 4.51 \\
+                \bottomrule
+                \end{tabular}
+            }
+            \caption{Power Consumption Under Different Usage Scenarios}
+        \end{table}
 
         %TODO: Conclusions from usage scenarios
 
