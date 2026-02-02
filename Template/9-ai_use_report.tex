@@ -10,11 +10,12 @@
   \renewcommand{\headrulewidth}{0.4pt}
 }
 \pagestyle{aipage}  % 只保留左边页眉，去掉右边页码
-\section{Use of AI}
+\section*{Use of AI}
+\addcontentsline{toc}{section}{Use of AI}
 
 This section documents authentic interactions between the team and AI assistant (GitHub Copilot) during the development of this paper. These examples demonstrate responsible AI usage focused on \textbf{data analysis}, \textbf{result interpretation}, and \textbf{document formatting}, while all core modeling work was completed independently by the team.
 
-\subsection{Battery Dataset Selection}
+\subsection*{Battery Dataset Selection}
 
 \begin{tcolorbox}[title=\textbf{Question: Using 18650 Data for Smartphone Modeling}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
 We found some 18650 cylindrical cell datasets with complete HPPC test data. Can we use 18650 data directly for smartphone battery modeling?
@@ -35,7 +36,7 @@ These differences would introduce systematic errors. I recommend searching for s
 
 \noindent\textbf{Team's Contribution:} Following this advice, we searched for smartphone-specific datasets and found the Samsung INR21700 30T battery dataset, which includes complete HPPC characterization at multiple temperatures (0°C, 23°C, 45°C). We selected this dataset for our parameter identification.
 
-\subsection{Dataset Overview and Statistics}
+\subsection*{Dataset Overview and Statistics}
 
 \begin{tcolorbox}[title=\textbf{Question: Analyzing Dataset Structure}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
 I have a large smartphone usage dataset. Can you help me analyze the overall data distribution and summarize what features are available?
@@ -56,7 +57,7 @@ Key features available: screen state and brightness, CPU utilization and core fr
 
 \noindent\textbf{Team's Contribution:} We designed the complete data processing pipeline, defined filtering criteria based on domain knowledge (excluding high battery levels to avoid trickle charging artifacts), and implemented the feature engineering logic.
 
-\subsection{Coefficient Reasonableness Analysis}
+\subsection*{Coefficient Reasonableness Analysis}
 
 \begin{tcolorbox}[title=\textbf{Question: Validating Model Coefficients}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
 My regression model produced these coefficients: Screen On (0.250W), Big Core (1.125W), Small Core (0.650W), Mobile Network (0.696W), GPS (0.040W), Power Saving (-0.068W). Can you help analyze whether they are physically reasonable?
@@ -75,7 +76,7 @@ These coefficients appear physically reasonable:
 
 \noindent\textbf{Team's Contribution:} We derived the model structure from first principles (power superposition, CMOS dynamic power formula, DVFS scaling law). AI assisted in reviewing whether the estimated coefficients align with expected physical behavior.
 
-\subsection{Data Sampling Strategy}
+\subsection*{Data Sampling Strategy}
 
 \begin{tcolorbox}[title=\textbf{Question: Efficient Sampling for Large Datasets}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
 I have 3 million data points but need to reduce computational cost. What sampling approach would preserve data quality?
@@ -94,7 +95,7 @@ This preserves temporal distribution and maintains representation of different u
 
 \noindent\textbf{Team's Contribution:} We determined the 1:5 sampling ratio based on computational constraints and validated that model coefficients remain stable across different sampling ratios.
 
-\subsection{LaTeX Equation Formatting}
+\subsection*{LaTeX Equation Formatting}
 
 \begin{tcolorbox}[title=\textbf{Question: Breaking Long Equations}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
 My power model equation is too long and overflows the page margin. How do I split it across lines?
@@ -113,7 +114,7 @@ Use the \texttt{aligned} environment inside \texttt{equation}:
 
 \noindent\textbf{Team's Contribution:} The model equation and all physical terms were derived by the team. AI assisted only with LaTeX syntax.
 
-\subsection{LaTeX Table Column Width Adjustment}
+\subsection*{LaTeX Table Column Width Adjustment}
 
 \begin{tcolorbox}[title=\textbf{Question: Uniform Table Column Widths}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
 My notation table has inconsistent column widths, and the table is too narrow compared to the page width. How can I make all columns have uniform width and expand the table to fill the text width?
@@ -140,7 +141,7 @@ The \texttt{X} column type automatically distributes remaining width equally. Us
 
 \noindent\textbf{Team's Contribution:} We created all table content and symbol definitions. AI assisted with LaTeX table formatting syntax.
 
-\subsection{Summary of AI Usage}
+\subsection*{Summary of AI Usage}
 
 \begin{table}[H]
 \centering
@@ -158,6 +159,6 @@ Documentation & LaTeX table/equation formatting & All technical writing \\
 \caption{Division of work between AI assistance and team contribution}
 \end{table}
 
-\subsection{Declaration}
+\subsection*{Declaration}
 
 All theoretical frameworks in this paper---including the second-order RC equivalent circuit model, Arrhenius temperature dependence, CMOS dynamic power formula ($P \propto f^{2.5}$), Friis transmission equation for RF power, and Newton's law of cooling for thermal modeling---were \textbf{independently researched, derived, and implemented by the team members}. AI tools were used for comparing battery types, understanding dataset structure, reviewing coefficient reasonableness, and LaTeX formatting---reflecting responsible AI assistance for productivity enhancement without replacing human judgment in scientific analysis.

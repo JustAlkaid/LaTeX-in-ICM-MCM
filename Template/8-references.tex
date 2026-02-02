@@ -1,40 +1,72 @@
 \newpage
 \begin{thebibliography}{99}
+\addcontentsline{toc}{section}{References}
 
-% [1] Samsung 电池数据集 - 用于 SOC 模型构建和温度修正
-\bibitem{samsung_dataset}
-    Kollmeyer, P. (2020).
-    Samsung INR21700 30T 3Ah Li-ion Battery Data [Data set].
-    Mendeley Data.
-    \url{https://doi.org/10.17632/9xyvy2njj3.2}
-
-% [2] ECM 等效电路模型
+% [1] ECM 等效电路模型 - 首次出现于 Ideal Battery 的 Thevenin Model
 \bibitem{ecm_model}
     Ouyang, Q., Chen, J., \& Zheng, J. (2023).
     State of Charge Estimation for Lithium-Ion Battery Based on the Fractional Order Equivalent Circuit Model.
     \textit{IEEE Access}, 11, 107175--107184.
     \url{https://ieeexplore.ieee.org/document/10287336}
 
-% [3] 安卓设备多维使用记录数据集 - 用于功耗分析
+% [2] EIS 教程 - RC 极化/等效电路说明（用于 Thevenin/RC 表征引用）
+\bibitem{lazanas2023_eis}
+    Lazanas, A. C., \& Prodromidis, M. I. (2023).
+    Electrochemical Impedance Spectroscopy—A Tutorial.
+    \textit{ACS Measurement Science Au}, 3(3), 162--193. doi:10.1021/acsmeasuresciau.2c00070. \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10288619/}
+
+% [3] HPPC 方法论文 - Physics-Informed HPPC (用于参数估计 / HPPC 引用)
+\bibitem{zhuang2024_hppc}
+    Zhuang, D., Li, M. L., Lam, V. N., Braatz, R. D., Chueh, W. C., \& Bazant, M. Z. (2024).
+    Physics-Informed Design of Hybrid Pulse Power Characterization Tests for Rechargeable Batteries.
+    \textit{Journal of The Electrochemical Society}, 171(5), 050510. doi:10.1149/1945-7111/ad4394.
+
+% [2] Samsung 电池数据集 - 用于参数估计和温度修正
+\bibitem{samsung_dataset}
+    Kollmeyer, P. (2020).
+    Samsung INR21700 30T 3Ah Li-ion Battery Data [Data set].
+    Mendeley Data.
+    \url{https://doi.org/10.17632/9xyvy2njj3.2}
+
+% [3] 智能手机功耗分析 - 功耗叠加原理
+\bibitem{smartphone_power}
+    Carroll, A., \& Heiser, G. (2010).
+    An Analysis of Power Consumption in a Smartphone.
+    \textit{USENIX Annual Technical Conference}, 21--21.
+
+% [4] 安卓设备多维使用记录数据集 - 用于功耗模型参数估计
 \bibitem{android_dataset}
     Ferreira, D., Gonçalves, J., Kostakos, V., \& Dey, A. K. (2024).
     Android Phone Usage Dataset: Multi-day, Multi-device Usage Logs [Data set].
     Mendeley Data, V6.
     \url{https://doi.org/10.17632/bpsrw76hgx.6}
 
-% [4] NASA 电池老化数据集 - 用于老化模型
-\bibitem{nasa_dataset}
-    Saha, B., \& Goebel, K. (2007).
-    Li-ion Battery Aging Datasets.
-    NASA Open Data Portal.
-    \url{https://data.nasa.gov/dataset/li-ion-battery-aging-datasets}
+% [5] ARM big.LITTLE 异构多核架构
+\bibitem{big_little}
+    Greenhalgh, P. (2011).
+    big.LITTLE Processing with ARM Cortex-A15 \& Cortex-A7.
+    ARM Holdings, White Paper.
 
-% [5] 电池老化机制综述
+% [6] Friis 传输方程 - 无线通信功率与距离关系
+\bibitem{friis}
+    Friis, H. T. (1946).
+    A Note on a Simple Transmission Formula.
+    \textit{Proceedings of the IRE}, 34(5), 254--256.
+    \url{https://doi.org/10.1109/JRPROC.1946.234568}
+
+% [7] 电池老化机制综述
 \bibitem{battery_aging}
     Barré, A., Deguilhem, B., Grolleau, S., Gérard, M., Suard, F., \& Riu, D. (2013).
     A review on lithium-ion battery ageing mechanisms and estimations for automotive applications.
     \textit{Journal of Power Sources}, 241, 680--689.
     \url{https://doi.org/10.1016/j.jpowsour.2013.05.040}
+
+% [8] NASA 电池老化数据集 - 用于老化模型拟合
+\bibitem{nasa_dataset}
+    Saha, B., \& Goebel, K. (2007).
+    Li-ion Battery Aging Datasets.
+    NASA Open Data Portal.
+    \url{https://data.nasa.gov/dataset/li-ion-battery-aging-datasets}
 
 \end{thebibliography}
 

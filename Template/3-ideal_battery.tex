@@ -30,6 +30,7 @@
         polarization. The former is caused by the charge transfer resistance at the electrode/electrolyte interface, while the latter is due to the mass
         transport limitations within the electrode materials. In the Thevenin model, these two polarization effects are represented by two RC networks: 
         $R_1, C_1$ for electrochemical polarization and $R_2, C_2$ for concentration polarization.
+        \cite{lazanas2023_eis}
 
         \begin{figure}[H]
             \centering
@@ -110,7 +111,7 @@
         where $U_{1, init}, U_{2, init}$ are the initial voltages across $C_1, C_2$ at the start of the open-circuit state.
 
     \subsection{Parameter Estimation}
-        The Hybrid Pulse Power Characterization (HPPC) test is commonly used for this purpose. The test is conducted with steps as follows:
+        The Hybrid Pulse Power Characterization (HPPC) test is commonly used for this purpose~\cite{zhuang2024_hppc}. The test is conducted with steps as follows:
         \begin{enumerate}
             \item The battery is first fully charged to $100\%$ $SOC$ in ways the manufacturer recommends.
             \item After resting for a certain period(e.g. 1 hour), the battery is discharged with a constant current pulse (e.g., $0.5C$) for a short 

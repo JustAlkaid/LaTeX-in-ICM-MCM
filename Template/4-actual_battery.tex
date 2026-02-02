@@ -64,7 +64,7 @@
     \subsection{Battery in Different Work Loads}
         \label{sec:power_model}
         A smartphone is a complex embedded system whose total power consumption can be decomposed into the sum of contributions from its independent 
-        subsystems. According to the \textbf{Principle of Power Superposition}, when individual modules share a power supply but operate relatively 
+        subsystems~\cite{smartphone_power}. According to the \textbf{Principle of Power Superposition}, when individual modules share a power supply but operate relatively 
         independently, the total power draw can be expressed as a linear superposition of the power consumption of each module.
 
         Based on a functional module breakdown, we decompose the smartphone's power consumption into the following six primary sources:
@@ -107,7 +107,7 @@
             V \propto f^{0.5} \quad \Rightarrow \quad P \propto f^{2.5}
         \end{equation}
 
-        Furthermore, modern ARM processors commonly adopt a \textbf{big.LITTLE heterogeneous architecture}, featuring separate big and small cores with 
+        Furthermore, modern ARM processors commonly adopt a \textbf{big.LITTLE heterogeneous architecture}~\cite{big_little}, featuring separate big and small cores with 
         distinct performance and power characteristics. Additionally, actual CPU power depends on its utilization; idle and fully loaded states at the 
         same frequency exhibit significantly different power draws. Thus, we derive the following CPU power model:
         \begin{equation}
@@ -119,7 +119,7 @@
 
         \subsubsection{Network Power}
         Power consumption in wireless communication stems primarily from the Radio Frequency (RF) front-end, especially the Power Amplifier (PA). 
-        According to the Friis transmission equation, received power is inversely proportional to the square of the distance:
+        According to the Friis transmission equation~\cite{friis}, received power is inversely proportional to the square of the distance:
         \begin{equation}
             P_r = P_t \cdot G_t \cdot G_r \cdot \left(\frac{\lambda}{4\pi d}\right)^2
         \end{equation}

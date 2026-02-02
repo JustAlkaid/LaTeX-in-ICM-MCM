@@ -152,9 +152,14 @@
 % 快乐 etoolbox
 \RequirePackage{etoolbox}  % 减轻正文复杂度
 \AtBeginEnvironment{abstract}{\setlength\parskip{1ex}}  % 摘要中增加段距
-\AtBeginEnvironment{thebibliography}{
-    \refstepcounter{section}
-    \addcontentsline{toc}{section}{References}}  % 参考文献附加链接
+% Note: original template automatically incremented section counter and
+% added a TOC entry when entering thebibliography. That behavior interferes
+% with manual control of the bibliography placement (duplicate headings and
+% incorrect counters). We remove the automatic hook so document authors can
+% add the bibliography as needed (e.g., via \section*{References}).
+%\AtBeginEnvironment{thebibliography}{
+%    \refstepcounter{section}
+%    \addcontentsline{toc}{section}{References}}  % 参考文献附加链接 (disabled)
 \BeforeBeginEnvironment{subappendices}{
     \clearpage
     \setcounter{secnumdepth}{-1}}  % 附录附加链接
