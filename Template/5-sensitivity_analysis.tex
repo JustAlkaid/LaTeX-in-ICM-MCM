@@ -20,7 +20,7 @@
 
         The calibration of electrical parameters of lithium batteries is crucial for accurate modeling and simulation. To assess the impact of numerical 
         accuracy on the calibration results, we add $5\%, 10\%, 20\%$ disturbance seperately to the electrical parameters $R_0, R_1, R_2$ and observe the
-        resulting prediction errors in $1\text{A}$ constant current scenario. The results are shown below:
+        resulting prediction errors in $1\mathrm{A}$ constant current scenario. The results are shown below:
         \begin{figure}[H]
             \centering
             \begin{subfigure}{0.3\textwidth}
@@ -51,7 +51,7 @@
         \end{itemize}
 
         The capacitance effect is not significant in constant current scenario. To further analyze the impact of numerical accuracy on $C_1, C_2$, we set
-        a pulse current discharge scenario ($1 \text{A}, 10\text{s}, SOC = 80\%$) to simulate the battery behavior. The results are shown below:
+        a pulse current discharge scenario ($1 \mathrm{A}, 10\mathrm{s}, SOC = 80\%$) to simulate the battery behavior. The results are shown below:
         \begin{figure}[H]
             \centering
             \begin{subfigure}{0.45\textwidth}
@@ -67,7 +67,7 @@
         It can be observed that the effect of $C_1$ is faster than that of $C_2$, which is consistent with our previous assumptions.
 
         Let $\tau = RC$ is the time constant of the RC circuit that describes how faster an RC circuit responds. When $SOC = 80\%$, we have 
-        $\tau_1 = 0.96\text{s}$ and $\tau_2 = 8.84\text{s}$. Therefore, during the 10s discharge pulse, $C_1$ will have a more immediate effect on the 
+        $\tau_1 = 0.96\mathrm{s}$ and $\tau_2 = 8.84\mathrm{s}$. Therefore, during the 10s discharge pulse, $C_1$ will have a more immediate effect on the 
         voltage response compared to $C_2$, but over a longer period, $C_2$ will also significantly influence the voltage recovery after the pulse ends. 
         Therefore, both capacitances play important roles in capturing the transient behavior of the battery under pulse discharge conditions, which 
         supports our use of 2-order Thevenin model.

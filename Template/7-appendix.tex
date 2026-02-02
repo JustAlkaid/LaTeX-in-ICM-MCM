@@ -10,18 +10,18 @@
         \hline
         \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Unit} \\
         \hline
-        Internal Resistance & $R$ & Total internal resistance of battery & $\Omega$ \\
-        Ohmic Resistance & $R_0$ & Ionic and electronic resistance & $\Omega$ \\
-        Polarization Resistance 1 & $R_1$ & Charge transfer resistance & $\Omega$ \\
-        Polarization Resistance 2 & $R_2$ & Concentration polarization & $\Omega$ \\
-        Activation Energy & $E_a$ & Energy barrier for charge transfer & kJ/mol \\
-        Universal Gas Constant & $R_u$ & Physical constant in Arrhenius equation & 8.314 J/(mol$\cdot$K) \\
-        Battery Temperature & $T$ & Real-time battery temperature & K \\
-        Environmental Temperature & $T_{env}$ & Ambient temperature (constant) & K \\
-        State of Charge & SOC & Battery capacity percentage & 0--100\% \\
-        Discharge Current & $I$ & Current flowing out during discharge & A \\
-        Battery Voltage & $V$ & Voltage output by battery & V \\
-        Battery Capacity & $C_{cap}$ & Total energy capacity & Ah \\
+        Internal Resistance          & $R$       & Total internal resistance of battery    & $\Omega$                                          \\
+        Ohm Resistance               & $R_0$     & Ionic and electronic resistance         & $\Omega$                                          \\
+        Polarization Resistance 1    & $R_1$     & Charge transfer resistance              & $\Omega$                                          \\
+        Polarization Resistance 2    & $R_2$     & Concentration polarization              & $\Omega$                                          \\
+        Activation Energy            & $E_a$     & Energy barrier for charge transfer      & $\mathrm{kJ/mol}$                                 \\
+        Universal Gas Constant       & $R_u$     & Physical constant in Arrhenius equation & $8.314 \mathrm{J}/(\mathrm{mol}\cdot \mathrm{K})$ \\
+        Battery Temperature          & $T$       & Real-time battery temperature           & $\mathrm{K}$                                      \\
+        Environmental Temperature    & $T_{env}$ & Ambient temperature (constant)          & $\mathrm{K}$                                      \\
+        State of Charge              & $SOC$     & Battery capacity percentage             & $0 \sim 100\%$                                    \\
+        Discharge Current            & $I$       & Current flowing out during discharge    & $\mathrm{A}$                                      \\
+        Battery Voltage              & $V$       & Voltage output by battery               & $\mathrm{V}$                                      \\
+        Battery Capacity             & $C_{cap}$ & Total energy capacity                   & $\mathrm{Ah}$                                     \\
         \hline
     \end{tabular}
 \end{table}
@@ -37,7 +37,7 @@
         \hline
         \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Unit} \\
         \hline
-        Total Power & $P_{total}$ & Sum of all power components & W \\
+        Total Power & $P_{total}$ & Sum of all power components & $\mathrm{W}$ \\
         \hline
     \end{tabular}
 \end{table}
@@ -51,11 +51,11 @@
         \hline
         \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Range/Unit} \\
         \hline
-        Screen Power & $P_{screen}$ & Power consumption of display system & W \\
-        Screen State & $S$ & On/off indicator (0: off, 1: on) & {0, 1} \\
-        Brightness Level & $B$ & Display brightness value & 0--255 \\
-        Base Coeff. & $\alpha_S$ & Base power when screen on & W \\
-        Brightness Coeff. & $\alpha_B$ & Additional power per brightness unit & W \\
+        Screen Power      & $P_{screen}$ & Power consumption of display system  & $\mathrm{W}$ \\
+        Screen State      & $S$          & On/off indicator (0: off, 1: on)     & $\{0, 1\}$   \\
+        Brightness Level  & $B$          & Display brightness value             & $0 \sim 255$ \\
+        Base Coeff.       & $\alpha_S$   & Base power when screen on            & $\mathrm{W}$ \\
+        Brightness Coeff. & $\alpha_B$   & Additional power per brightness unit & $\mathrm{W}$ \\
         \hline
     \end{tabular}
 \end{table}
@@ -69,15 +69,15 @@
         \hline
         \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Range/Unit} \\
         \hline
-        CPU Power & $P_{CPU}$ & Power consumption of CPU & W \\
-        CPU Utilization & $U$ & Fraction of time CPU is active & 0--1 \\
-        Big Core Frequency & $f_{big}$ & Frequency of high-performance cores & GHz \\
-        Small Core Frequency & $f_{small}$ & Frequency of efficiency cores & GHz \\
-        Max Big Core Freq. & $f_{max,big}$ & Maximum frequency of big cores & GHz \\
-        Max Small Core Freq. & $f_{max,small}$ & Maximum frequency of small cores & GHz \\
-        Utilization Coeff. & $\alpha_U$ & Power per unit utilization & W \\
-        Big Core Coeff. & $\alpha_{big}$ & Power consumption at max frequency & W \\
-        Small Core Coeff. & $\alpha_{small}$ & Power consumption at max frequency & W \\
+        CPU Power            & $P_{CPU}$        & Power consumption of CPU            & $\mathrm{W}$   \\
+        CPU Utilization      & $U$              & Fraction of time CPU is active      & $0 \sim 1$     \\
+        Big Core Frequency   & $f_{big}$        & Frequency of high-performance cores & $\mathrm{GHz}$ \\
+        Small Core Frequency & $f_{small}$      & Frequency of efficiency cores       & $\mathrm{GHz}$ \\
+        Max Big Core Freq.   & $f_{max,big}$    & Maximum frequency of big cores      & $\mathrm{GHz}$ \\
+        Max Small Core Freq. & $f_{max,small}$  & Maximum frequency of small cores    & $\mathrm{GHz}$ \\
+        Utilization Coeff.   & $\alpha_U$       & Power per unit utilization          & $\mathrm{W}$   \\
+        Big Core Coeff.      & $\alpha_{big}$   & Power consumption at max frequency  & $\mathrm{W}$   \\
+        Small Core Coeff.    & $\alpha_{small}$ & Power consumption at max frequency  & $\mathrm{W}$   \\
         \hline
     \end{tabular}
 \end{table}
@@ -91,9 +91,9 @@
         \hline
         \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Range/Unit} \\
         \hline
-        Network Power & $P_{network}$ & Wireless communication power & W \\
-        Network Type & $M$ & Type (0: WiFi, 1: Cellular) & {0, 1} \\
-        Mobile Network Coeff. & $\alpha_M$ & Cellular power vs WiFi & W \\
+        Network Power         & $P_{network}$ & Wireless communication power & $\mathrm{W}$ \\
+        Network Type          & $M$           & Type (0: WiFi, 1: Cellular)  & $\{0, 1\}$   \\
+        Mobile Network Coeff. & $\alpha_M$    & Cellular power vs WiFi       & $\mathrm{W}$ \\
         \hline
     \end{tabular}
 \end{table}
@@ -107,9 +107,9 @@
         \hline
         \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Range/Unit} \\
         \hline
-        GPS Power & $P_{GPS}$ & GPS receiver power & W \\
-        GPS Activity & $G$ & On/off indicator (0: off, 1: on) & {0, 1} \\
-        GPS Power Coeff. & $\alpha_G$ & GPS active power & W \\
+        GPS Power        & $P_{GPS}$  & GPS receiver power               & $\mathrm{W}$ \\
+        GPS Activity     & $G$        & On/off indicator (0: off, 1: on) & $\{0, 1\}$   \\
+        GPS Power Coeff. & $\alpha_G$ & GPS active power                 & $\mathrm{W}$ \\
         \hline
     \end{tabular}
 \end{table}
@@ -123,9 +123,9 @@
         \hline
         \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Range/Unit} \\
         \hline
-        Audio Power & $P_{audio}$ & Audio playback power & W \\
-        Audio Playback & $A$ & Active indicator (0: no, 1: yes) & {0, 1} \\
-        Audio Power Coeff. & $\alpha_A$ & Audio playback power & W \\
+        Audio Power        & $P_{audio}$ & Audio playback power             & $\mathrm{W}$ \\
+        Audio Playback     & $A$         & Active indicator (0: no, 1: yes) & $\{0, 1\}$   \\
+        Audio Power Coeff. & $\alpha_A$  & Audio playback power             & $\mathrm{W}$ \\
         \hline
     \end{tabular}
 \end{table}
@@ -139,11 +139,11 @@
         \hline
         \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Range/Unit} \\
         \hline
-        Mode Adjustment & $P_{mode}$ & Power adjustment from system modes & W \\
-        Power Saving Mode & $E$ & On/off indicator (0: off, 1: on) & {0, 1} \\
-        Flight Mode & $F$ & On/off indicator (0: off, 1: on) & {0, 1} \\
-        Power Saving Coeff. & $\alpha_E$ & Power reduction from power saving & W \\
-        Flight Mode Coeff. & $\alpha_F$ & Power reduction from flight mode & W \\
+        Mode Adjustment     & $P_{mode}$ & Power adjustment from system modes & $\mathrm{W}$ \\
+        Power Saving Mode   & $E$ & On/off indicator (0: off, 1: on)          & $\{0, 1\}$   \\
+        Flight Mode         & $F$ & On/off indicator (0: off, 1: on)          & $\{0, 1\}$   \\
+        Power Saving Coeff. & $\alpha_E$ & Power reduction from power saving  & $\mathrm{W}$ \\
+        Flight Mode Coeff.  & $\alpha_F$ & Power reduction from flight mode   & $\mathrm{W}$ \\
         \hline
     \end{tabular}
 \end{table}
@@ -160,14 +160,14 @@ Note: The coefficients $\alpha_S, \alpha_B, \alpha_U, \alpha_{big}, \alpha_{smal
         \hline
         \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Unit} \\
         \hline
-        Internal Heat Power & $Q$ & Total heat generation rate & W \\
-        Battery Joule Heat & $Q_{battery}$ & Joule heat from internal resistance & W \\
-        Processor Heat & $Q_{processor}$ & Heat from CPU and circuits & W \\
-        Other Heat & $Q_{other}$ & Heat from other modules & W \\
-        Heat Transfer Coeff. & $h$ & Convective heat transfer coefficient & W/(m$^2 \cdot$K) \\
-        Surface Area & $A$ & Heat dissipation area & m$^2$ \\
-        Heat Capacity & $C$ & Thermal mass of battery & J/K \\
-        Heat Efficiency & $\eta$ & Fraction of power to heat & Dimensionless \\
+        Internal Heat Power  & $Q$             & Total heat generation rate           & $\mathrm{W}$                                 \\
+        Battery Joule Heat   & $Q_{battery}$   & Joule heat from internal resistance  & $\mathrm{W}$                                 \\
+        Processor Heat       & $Q_{processor}$ & Heat from CPU and circuits           & $\mathrm{W}$                                 \\
+        Other Heat           & $Q_{other}$     & Heat from other modules              & $\mathrm{W}$                                 \\
+        Heat Transfer Coeff. & $h$             & Convective heat transfer coefficient & $\mathrm{W}/(\mathrm{m}^2 \cdot \mathrm{K})$ \\
+        Surface Area         & $A$             & Heat dissipation area                & $\mathrm{m}^2$                               \\
+        Heat Capacity        & $C$             & Thermal mass of battery              & $\mathrm{J/K}$                               \\
+        Heat Efficiency      & $\eta$          & Fraction of power to heat            & N/A                                          \\
         \hline
     \end{tabular}
 \end{table}
@@ -181,9 +181,9 @@ Note: The coefficients $\alpha_S, \alpha_B, \alpha_U, \alpha_{big}, \alpha_{smal
         \hline
         \textbf{Parameter} & \textbf{Symbol} & \textbf{Physical Meaning} & \textbf{Unit} \\
         \hline
-        Time & $t$ & Elapsed time from start & s \\
-        Discharge Time & $t_{discharge}$ & Time to shutdown voltage & h \\
-        Maximum Temperature & $T_{max}$ & Peak temperature during discharge & K \\
+        Time                & $t$             & Elapsed time from start           & $\mathrm{s}$ \\
+        Discharge Time      & $t_{discharge}$ & Time to shutdown voltage          & $\mathrm{h}$ \\
+        Maximum Temperature & $T_{max}$       & Peak temperature during discharge & $\mathrm{K}$ \\
         \hline
     \end{tabular}
 \end{table}
@@ -191,11 +191,11 @@ Note: The coefficients $\alpha_S, \alpha_B, \alpha_U, \alpha_{big}, \alpha_{smal
 \noindent
 Typical Values (Samsung INR21700 30T 3Ah Li-ion Battery):
 \begin{itemize}
-    \item Heat capacity: $C = 160$ J/K
-    \item Convective heat transfer coefficient: $h = 5$ W/(m$^2 \cdot$K)
-    \item Smartphone surface area: $A = 200$ cm$^2$
+    \item Heat capacity: $C = 160 \mathrm{J/K}$
+    \item Convective heat transfer coefficient: $h = 5 \mathrm{W}/(\mathrm{m}^2 \cdot \mathrm{K})$
+    \item Smartphone surface area: $A = 200 \mathrm{cm}^2$
     \item Processor heat fraction: $\eta = 0.5$
-    \item Other heat generation: $Q_{other} = 0.8$ W
-    \item Shutdown voltage: $V_{min} = 3.2$ V (device stops regardless of SOC)
-    \item Thermal shutdown temperature: $T_{max} = 50$ C (protection limit)
+    \item Other heat generation: $Q_{other} = 0.8 \mathrm{W}$
+    \item Shutdown voltage: $V_{min} = 3.2 \mathrm{V}$ (device stops regardless of SOC)
+    \item Thermal shutdown temperature: $T_{max} = 50 \mathrm{^\circ C}$ (protection limit)
 \end{itemize}

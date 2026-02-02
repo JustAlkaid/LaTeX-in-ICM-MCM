@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  2 FEB 2026 20:27
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  2 FEB 2026 21:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1266,11 +1266,6 @@ Underfull \hbox (badness 3375) in paragraph at lines 13--13
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
-[]|\T1/ppl/m/n/12 Ohmic Re-sis-
- []
-
-
 Underfull \hbox (badness 6510) in paragraph at lines 14--14
 []|\T1/ppl/m/n/12 Ionic and elec-tronic re-sis-
  []
@@ -1306,8 +1301,8 @@ Underfull \hbox (badness 1275) in paragraph at lines 18--18
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-[]|\T1/ppl/m/n/12 8.314
+Overfull \hbox (2.91174pt too wide) in paragraph at lines 18--19
+[]|$\OT1/cmr/m/n/12 8\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 314J\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 ([] \OMS/cmsy/m/n/12 ^^A
  []
 
 
@@ -1410,11 +1405,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--167
 []|\T1/ppl/m/n/12 Heat Trans-fer
  []
 
-
-Overfull \hbox (15.04318pt too wide) in paragraph at lines 170--171
-[]|\T1/ppl/m/n/12 Dimensionless| 
- []
-
 [20]
 Underfull \hbox (badness 3679) in paragraph at lines 186--186
 []|\T1/ppl/m/n/12 Maximum Tem-
@@ -1451,6 +1441,6 @@ Here is how much of TeX's memory you used:
  58184 multiletter control sequences out of 15000+600000
  582302 words of font info for 82 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 94i,13n,107p,766b,1482s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,13n,107p,688b,1482s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (25 pages).

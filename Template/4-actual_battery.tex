@@ -11,7 +11,7 @@
                                                   temperature.
             \item \textbf{Shutdown Voltage}: Electronics need a minimum voltage to operate correctly. If the battery voltage drops(steadily or suddenly) 
                                              below this threshold, the device will shutdown even if $SOC$ is not zero. In this section, we'll assume that 
-                                             if the battery voltage drops below 3.2V, the device will shutdown immediately.
+                                             if the battery voltage drops below $3.2 \mathrm{V}$, the device will shutdown immediately.
         \end{itemize}
 
     \subsection{Temperature Behavior of Battery}
@@ -126,8 +126,8 @@
         \end{equation}
 
         Consequently, to maintain communication quality over distances up to several kilometers for cellular networks, relatively high transmit power is 
-        required (typically $200 \sim 500 \text{mW}$). In contrast, WiFi communication with a router within tens of meters uses lower transmit power 
-        (typically $50 \sim 100 \text{mW}$). Moreover, PA efficiency is typically only $30 \sim 40\%$, with substantial energy converted to heat, making
+        required (typically $200 \sim 500 \mathrm{mW}$). In contrast, WiFi communication with a router within tens of meters uses lower transmit power 
+        (typically $50 \sim 100 \mathrm{mW}$). Moreover, PA efficiency is typically only $30 \sim 40\%$, with substantial energy converted to heat, making
         network power a significant contributor to total consumption.
 
         Since WiFi and cellular networks are typically used exclusively in practice, our model uses a single indicator variable for network type:
@@ -198,7 +198,12 @@
             \label{fig:power_model_fitting}
         \end{figure}
 
-        Results demonstrate that the white-box power model constructed based on the real-world smartphone dataset achieves satisfactory prediction performance, with an $R^2$ of 0.606, an MAE of 0.355 W, and an RMSE of 0.461 W. Among the factors analyzed, CPU usage and data network activity exhibit the most significant impact on power draw, whereas GPS consumption and the energy-saving effects of the two included modes show relatively minor influence. As mentioned above, the energy-saving effects of these two modes in practice primarily stem from their influence on the aforementioned features; the small coefficients here reflect that their impact on factors beyond those already captured is relatively minor.
+        Results demonstrate that the white-box power model constructed based on the real-world smartphone dataset achieves satisfactory prediction 
+        performance, with an $R^2$ of $0.606$, an MAE of $0.355 \mathrm{W}$, and an RMSE of $0.461 \mathrm{W}$. Among the factors analyzed, CPU usage and 
+        data network activity exhibit the most significant impact on power draw, whereas GPS consumption and the energy-saving effects of the two included
+        modes show relatively minor influence. As mentioned above, the energy-saving effects of these two modes in practice primarily stem from their 
+        influence on the aforementioned features; the small coefficients here reflect that their impact on factors beyond those already captured is 
+        relatively minor.
 
         \subsubsection{Usage Scenario Simulation}
         The model allows us to estimate the smartphone's power consumption under various typical usage scenarios. Here are some typical scenarios and 
