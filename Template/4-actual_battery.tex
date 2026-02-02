@@ -55,6 +55,7 @@
             \centering
             \includegraphics[width=0.6\linewidth]{depletion_time_heatmap.png}
             \caption{Heatmap of Time to Empty with Power Load and Temperature}
+            \label{fig:simple_time_to_empty}
         \end{figure}
 
         It can be observed that battery behaves badly at low temperatures, and the discharge time decreases significantly as temperature drops. However,
@@ -222,13 +223,9 @@
             \caption{Power Consumption Under Different Usage Scenarios}
         \end{table}
 
-        %TODO: Conclusions from usage scenarios
-
     \subsection{Heat Transfer Model in High-Performance Scenarios}
         In this chapter, we discuss how the heat that battery generates affacts the temperature of battery itself, and in turn impacts its own 
         performance.
-
-        %TODO: Assumptions about heat transfer model
 
         Let $Q$ be the internal heat power, $h$ be the convective heat transfer coefficient, $A$ be the surface area of the battery(assumed to be the area
         of the smartphone), $C$ be the heat capacity of the battery, $T$ be the battery temperature and $T_{env}$ be the environmental temperature(assumed
@@ -280,6 +277,7 @@
                 \includegraphics[width=\linewidth]{max_temperature_thermal_heatmap.png}
             \end{subfigure}
             \caption{Heatmap of Discharge Time and Max Temperature}
+            \label{fig:complex_time_to_empty}
         \end{figure}
 
         In the simulation we set $C = 160 \mathrm{J/K}$, $A = 200 \mathrm{cm}^2$, $h = 5 \mathrm{W/(m^2 \cdot K)}$, $\eta = 0.5$ and 
@@ -287,3 +285,13 @@
 
         It can be observed that high temperature scenarios are quite dangerous for battery operation. Heavy work loads in $30 \mathrm{^\circ C}$ or higher
         can easily lead to battery overheating.
+
+    \subsection{Answer to Problem 1}
+        In section \ref{sec:ideal_battery}, we have already built an simplistic ideal battery model. Then in this section, we have considered more complex
+        factors that affect real battery performance, which should answer Problem 1.
+
+    \subsection{Answer to Problem 2}
+        Heatmap \ref{fig:simple_time_to_empty} and \ref{fig:complex_time_to_empty} show the heatmaps of discharge time under different power load and 
+        temperature. From these two figures we can see that in low power load scenarios, temperature has a significant impact on battery performance. 
+        However, as power load increases, the influence of temperature gradually diminishes. In high power load scenarios, the battery performance is 
+        primarily determined by the power load itself, with temperature playing a secondary role.
