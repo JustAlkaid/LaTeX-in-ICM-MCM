@@ -1,0 +1,151 @@
+\section{Use of AI}
+
+This section documents authentic interactions between the team and AI assistant (GitHub Copilot) during the development of this paper. These examples demonstrate responsible AI usage focused on \textbf{data analysis}, \textbf{result interpretation}, and \textbf{document formatting}, while all core modeling work was completed independently by the team.
+
+\subsection{Battery Dataset Selection}
+
+\begin{tcolorbox}[title=\textbf{Question: Using 18650 Data for Smartphone Modeling}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
+We found some 18650 cylindrical cell datasets with complete HPPC test data. Can we use 18650 data directly for smartphone battery modeling?
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{AI Response}, colback=green!2!white, colframe=green!30!black, fonttitle=\bfseries, breakable]
+Using 18650 data directly for smartphone modeling is not ideal due to several differences:
+
+\begin{itemize}
+    \item \textbf{Form Factor:} 18650 is cylindrical with rigid metal casing, while smartphone batteries are flat pouch cells
+    \item \textbf{Internal Resistance:} 18650 cells typically have higher resistance due to smaller electrode surface area
+    \item \textbf{Thermal Characteristics:} Metal-cased 18650 cells have better heat dissipation; pouch cells are more thermally sensitive
+    \item \textbf{Chemistry:} 18650 often uses NCA/NMC, while smartphones typically use LiCoO$_2$
+\end{itemize}
+
+These differences would introduce systematic errors. I recommend searching for smartphone-specific battery test data if available.
+\end{tcolorbox}
+
+\noindent\textbf{Team's Contribution:} Following this advice, we searched for smartphone-specific datasets and found the Samsung INR21700 30T battery dataset, which includes complete HPPC characterization at multiple temperatures (0°C, 23°C, 45°C). We selected this dataset for our parameter identification.
+
+\subsection{Dataset Overview and Statistics}
+
+\begin{tcolorbox}[title=\textbf{Question: Analyzing Dataset Structure}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
+I have a large smartphone usage dataset. Can you help me analyze the overall data distribution and summarize what features are available?
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{AI Response}, colback=green!2!white, colframe=green!30!black, fonttitle=\bfseries, breakable]
+Based on your dataset structure, here's an overview:
+
+\begin{itemize}
+    \item \textbf{Total records:} 3.24 million discharge data points
+    \item \textbf{Target device:} Device ID \texttt{ab47b5f5ecded6b8} (largest data volume)
+    \item \textbf{After filtering:} 2.96 million valid points (excluding battery $>$ 95\%)
+    \item \textbf{Sampling result:} 591,637 observations for regression
+\end{itemize}
+
+Key features available: screen state and brightness, CPU utilization and core frequencies, network connection status, GPS/Bluetooth/audio states, and power-saving mode indicators.
+\end{tcolorbox}
+
+\noindent\textbf{Team's Contribution:} We designed the complete data processing pipeline, defined filtering criteria based on domain knowledge (excluding high battery levels to avoid trickle charging artifacts), and implemented the feature engineering logic.
+
+\subsection{Coefficient Reasonableness Analysis}
+
+\begin{tcolorbox}[title=\textbf{Question: Validating Model Coefficients}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
+My regression model produced these coefficients: Screen On (0.250W), Big Core (1.125W), Small Core (0.650W), Mobile Network (0.696W), GPS (0.040W), Power Saving (-0.068W). Can you help analyze whether they are physically reasonable?
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{AI Response}, colback=green!2!white, colframe=green!30!black, fonttitle=\bfseries, breakable]
+These coefficients appear physically reasonable:
+
+\begin{enumerate}
+    \item \textbf{Big Core $>$ Small Core:} Consistent with big.LITTLE architecture where performance cores consume more power than efficiency cores.
+    \item \textbf{Mobile Network is significant:} Cellular RF transmission requires higher power than WiFi due to longer communication distances.
+    \item \textbf{GPS is small:} GPS is primarily a receiver with low power consumption.
+    \item \textbf{Power-saving modes are negative:} The small magnitudes suggest most savings come from reducing other parameters already captured in the model.
+\end{enumerate}
+\end{tcolorbox}
+
+\noindent\textbf{Team's Contribution:} We derived the model structure from first principles (power superposition, CMOS dynamic power formula, DVFS scaling law). AI assisted in reviewing whether the estimated coefficients align with expected physical behavior.
+
+\subsection{Data Sampling Strategy}
+
+\begin{tcolorbox}[title=\textbf{Question: Efficient Sampling for Large Datasets}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
+I have 3 million data points but need to reduce computational cost. What sampling approach would preserve data quality?
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{AI Response}, colback=green!2!white, colframe=green!30!black, fonttitle=\bfseries, breakable]
+For time-series data, use systematic sampling (jump sampling) rather than random sampling:
+
+\begin{ai_python}
+df_sorted = df.sort_values('timestamp')
+sample = df_sorted.iloc[::5]  # Every 5th point
+\end{ai_python}
+
+This preserves temporal distribution and maintains representation of different usage patterns.
+\end{tcolorbox}
+
+\noindent\textbf{Team's Contribution:} We determined the 1:5 sampling ratio based on computational constraints and validated that model coefficients remain stable across different sampling ratios.
+
+\subsection{LaTeX Equation Formatting}
+
+\begin{tcolorbox}[title=\textbf{Question: Breaking Long Equations}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
+My power model equation is too long and overflows the page margin. How do I split it across lines?
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{AI Response}, colback=green!2!white, colframe=green!30!black, fonttitle=\bfseries, breakable]
+Use the \texttt{aligned} environment inside \texttt{equation}:
+
+\begin{verbatim}
+\boxed{\begin{aligned}
+    P_{total} &= 0.250S + 0.615S\frac{B}{255} + ... \\
+    &\quad + 0.696M + 0.040G + ...
+\end{aligned}}
+\end{verbatim}
+\end{tcolorbox}
+
+\noindent\textbf{Team's Contribution:} The model equation and all physical terms were derived by the team. AI assisted only with LaTeX syntax.
+
+\subsection{LaTeX Table Column Width Adjustment}
+
+\begin{tcolorbox}[title=\textbf{Question: Uniform Table Column Widths}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
+My notation table has inconsistent column widths, and the table is too narrow compared to the page width. How can I make all columns have uniform width and expand the table to fill the text width?
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{AI Response}, colback=green!2!white, colframe=green!30!black, fonttitle=\bfseries, breakable]
+Use the \texttt{tabularx} package with equal-width columns:
+
+\begin{verbatim}
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\begin{tabularx}{\textwidth}{|Y|Y|Y|}
+\hline
+\textbf{Symbol} & \textbf{Description} & \textbf{Unit} \\
+\hline
+$R_0$ & Ohmic resistance & $\Omega$ \\
+...
+\end{tabularx}
+\end{verbatim}
+
+The \texttt{X} column type automatically distributes remaining width equally. Using \texttt{\textbackslash textwidth} ensures the table spans the full page width.
+\end{tcolorbox}
+
+\noindent\textbf{Team's Contribution:} We created all table content and symbol definitions. AI assisted with LaTeX table formatting syntax.
+
+\subsection{Summary of AI Usage}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Category} & \textbf{AI Assistance} & \textbf{Team Responsibility} \\
+\midrule
+Core Modeling & --- & Thevenin model, Arrhenius, DVFS \\
+Data Selection & Advised against 18650 & Found Samsung dataset \\
+Data Analysis & Dataset statistics & Filtering, feature engineering \\
+Result Interpretation & Coefficient review & Model fitting, validation \\
+Documentation & LaTeX table/equation formatting & All technical writing \\
+\bottomrule
+\end{tabular}
+\caption{Division of work between AI assistance and team contribution}
+\end{table}
+
+\subsection{Declaration}
+
+All theoretical frameworks in this paper---including the second-order RC equivalent circuit model, Arrhenius temperature dependence, CMOS dynamic power formula ($P \propto f^{2.5}$), Friis transmission equation for RF power, and Newton's law of cooling for thermal modeling---were \textbf{independently researched, derived, and implemented by the team members}. AI tools were used for comparing battery types, understanding dataset structure, reviewing coefficient reasonableness, and LaTeX formatting---reflecting responsible AI assistance for productivity enhancement without replacing human judgment in scientific analysis.
