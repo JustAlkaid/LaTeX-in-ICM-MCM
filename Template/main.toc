@@ -19,9 +19,8 @@
 \contentsline {subsubsection}{\numberline {2.3.8}Usage Scenario Simulation}{13}{subsubsection.0.2.3.8}%
 \contentsline {subsection}{\numberline {2.4}Heat Transfer Model in High-Performance Scenarios}{14}{subsection.0.2.4}%
 \contentsline {section}{\numberline {3}Sensitivity Analysis}{15}{section.0.3}%
-\contentsline {subsection}{\numberline {3.1}Analysis of Basic Electrical Parameters}{15}{subsection.0.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Time-Varying Properties}{15}{subsubsection.0.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Numerical Accuracy}{16}{subsubsection.0.3.1.2}%
+\contentsline {subsection}{\numberline {3.1}Time-Varying Properties}{15}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {3.2}Numerical Accuracy}{16}{subsection.0.3.2}%
 \contentsline {section}{\numberline {A}Notation}{18}{appendix.A}%
 \contentsline {subsection}{\numberline {A.1}Battery Parameters}{18}{subsection.A.1}%
 \contentsline {subsection}{\numberline {A.2}Power Consumption Parameters}{18}{subsection.A.2}%
