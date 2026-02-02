@@ -18,6 +18,9 @@
 \contentsline {subsubsection}{\numberline {2.3.7}Parameter Estimation and Validation}{11}{subsubsection.0.2.3.7}%
 \contentsline {subsubsection}{\numberline {2.3.8}Usage Scenario Simulation}{12}{subsubsection.0.2.3.8}%
 \contentsline {subsection}{\numberline {2.4}Heat Transfer Model in High-Performance Scenarios}{13}{subsection.0.2.4}%
+\contentsline {section}{\numberline {3}Sensitivity Analysis}{14}{section.0.3}%
+\contentsline {subsection}{\numberline {3.1}Analysis of Basic Electrical Parameters}{14}{subsection.0.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}The Importance of Time-Varying Parameters}{14}{subsubsection.0.3.1.1}%
 \contentsline {section}{\numberline {A}Notation}{15}{appendix.A}%
 \contentsline {subsection}{\numberline {A.1}Battery Parameters}{15}{subsection.A.1}%
 \contentsline {subsection}{\numberline {A.2}Power Consumption Parameters}{15}{subsection.A.2}%

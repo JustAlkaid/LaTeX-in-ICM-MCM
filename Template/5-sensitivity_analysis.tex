@@ -1,0 +1,8 @@
+\section{Sensitivity Analysis}
+    \subsection{Analysis of Basic Electrical Parameters}
+        Smartphone batteries varies in capacity, voltage, and internal resistance. To understand how these variations affect the performance of the system,
+        we conducted a sensitivity analysis by varying each parameter in equation \eqref{Thevenin_model_matrix_form} within realistic ranges.
+
+        \subsubsection{The Importance of Time-Varying Parameters}
+        Too much simplification leads to lose of actual behavior. For example, setting $R_0, R_1, R_2, C_1, C_2$ to constants rather than parameters 
+        varies with SoC can result in inaccurate predictions. Here is the result if we simply set them as sample mean values:
